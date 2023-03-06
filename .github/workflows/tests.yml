@@ -1,0 +1,13 @@
+name: "Tests"
+
+on: [push, pull_request]
+
+jobs:
+  call-workflow:
+    strategy:
+      matrix:
+        scripts: [{script: dist, name: "Typescript"}]
+    uses: michijs/.github/.github/workflows/execute-script.yml@main
+    name: "Run ${{matrix.scripts.name}} tests"
+    with:
+      script-name: ${{ matrix.scripts.script }}

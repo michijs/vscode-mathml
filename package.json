@@ -1,0 +1,55 @@
+{
+  "name": "vscode-mathml",
+  "displayName": "MathML",
+  "description": "MathML extension for VS Code",
+  "author": "Lucas M. Segurado",
+  "icon": "media/mathml.png",
+  "version": "0.1.0",
+  "publisher": "michijs",
+  "repository": "https://github.com/michijs/vscode-mathml",
+  "files": [
+    "dist/"
+  ],
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.38.0"
+  },
+  "scripts": {
+    "start": "ts-node ./tasks/generateTypes.ts",
+    "dist": "tsc",
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "link": "npm run dist && npm link --force && tsc -w"
+  },
+  "keywords": [
+    "math",
+    "mathml",
+    "html",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@vscode/vsce": "^2.18.0",
+    "lint-staged": "13.1.2",
+    "rome": "11.0.0",
+    "simple-git-hooks": "2.8.1",
+    "ts-node": "10.9.1",
+    "typescript": "4.9.5",
+    "vscode-html-languageservice": "5.0.4"
+  },
+  "contributes": {
+    "html": {
+      "customData": [
+        "./dist/mathml.json"
+      ]
+    }
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "rome check --apply-suggested",
+      "rome format --write"
+    ]
+  }
+}

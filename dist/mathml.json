@@ -1,0 +1,803 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "math",
+      "description": "The `<math>` MathML element is the top-level MathML element, used to write a single mathematical formula. It can be placed in HTML content where flow content is permitted.",
+      "attributes": [
+        {
+          "name": "display",
+          "description": "Specifies the rendering mode. The values `block` and `inline` are allowed.",
+          "values": [
+            {
+              "name": "block"
+            },
+            {
+              "name": "inline"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "xmlns",
+          "description": "Specifies the URI for the MathML namespace.",
+          "values": [
+            {
+              "name": "http://www.w3.org/1998/Math/MathML"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/math"
+        }
+      ]
+    },
+    {
+      "name": "merror",
+      "description": "The `<merror>` MathML element is used to display contents as error messages. The intent of this element is to provide a standard way for programs that generate MathML from other input to report syntax errors.",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/merror"
+        }
+      ]
+    },
+    {
+      "name": "mfrac",
+      "description": "The `<mfrac>` MathML element is used to display fractions. It can also be used to mark up fraction-like objects such as binomial coefficients and Legendre symbols.",
+      "attributes": [
+        {
+          "name": "linethickness",
+          "description": "A `<length-percentage>` indicating the thickness of the horizontal fraction line.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfrac"
+        }
+      ]
+    },
+    {
+      "name": "mi",
+      "description": "The `<mi>` MathML element indicates that the content should be rendered as an identifier such as function names, variables or symbolic constants. You can also have arbitrary text in it to mark up terms.",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mi"
+        }
+      ]
+    },
+    {
+      "name": "mmultiscripts",
+      "description": "The `<mmultiscripts>` MathML element is used to attach an arbitrary number of subscripts and superscripts to an expression at once, generalizing the `<msubsup> element`. Scripts can be either prescripts (placed before the expression) or postscripts (placed after it).",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mmultiscripts"
+        }
+      ]
+    },
+    {
+      "name": "mn",
+      "description": "The `<mn>` MathML element represents a numeric literal which is normally a sequence of digits with a possible separator (a dot or a comma). However, it is also allowed to have arbitrary text in it which is actually a numeric quantity, for example \"eleven\".",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mn"
+        }
+      ]
+    },
+    {
+      "name": "mo",
+      "description": "The `<mo>` MathML element represents an operator in a broad sense. Besides operators in strict mathematical meaning, this element also includes \"operators\" like parentheses, separators like comma and semicolon, or \"absolute value\" bars.",
+      "attributes": [
+        {
+          "name": "fence",
+          "description": "A `<boolean>` indicating whether the operator is a fence (such as parentheses). There is no visual effect for this attribute.",
+          "values": [
+            {
+              "name": "false"
+            },
+            {
+              "name": "true"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "largeop",
+          "description": "A `<boolean>` indicating whether the operator should be drawn bigger when math-style is set to normal.",
+          "values": [
+            {
+              "name": "false"
+            },
+            {
+              "name": "true"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "lspace",
+          "description": "A `<length-percentage>` indicating the amount of space before the operator.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "maxsize",
+          "description": "A `<length-percentage>` indicating the maximum size of the operator when it is stretchy.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "minsize",
+          "description": "A `<length-percentage>` indicating the minimum size of the operator when it is stretchy.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "movablelimits",
+          "description": "A `<boolean>` indicating whether attached under- and overscripts move to sub- and superscript positions when math-style is set to compact.",
+          "values": [
+            {
+              "name": "false"
+            },
+            {
+              "name": "true"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "rspace",
+          "description": "A `<length-percentage>` indicating the amount of space after the operator.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "separator",
+          "description": "A `<boolean>` indicating whether the operator is a separator (such as commas). There is no visual effect for this attribute.",
+          "values": [
+            {
+              "name": "false"
+            },
+            {
+              "name": "true"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "stretchy",
+          "description": "A `<boolean>` indicating whether the operator stretches to the size of the adjacent element.",
+          "values": [
+            {
+              "name": "false"
+            },
+            {
+              "name": "true"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "symmetric",
+          "description": "A `<boolean>` indicating whether a stretchy operator should be vertically symmetric around the imaginary math axis (centered fraction line).",
+          "values": [
+            {
+              "name": "false"
+            },
+            {
+              "name": "true"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mo"
+        }
+      ]
+    },
+    {
+      "name": "mover",
+      "description": "The `<mover>` MathML element represents an operator in a broad sense. Besides operators in strict mathematical meaning, this element also includes \"operators\" like parentheses, separators like comma and semicolon, or \"absolute value\" bars.",
+      "attributes": [
+        {
+          "name": "accent",
+          "description": "A `<boolean>` indicating whether the over script should be treated as an accent (i.e. drawn bigger and closer to the base expression).",
+          "values": [
+            {
+              "name": "false"
+            },
+            {
+              "name": "true"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mover"
+        }
+      ]
+    },
+    {
+      "name": "mpadded",
+      "description": "The `<mpadded>` MathML element is used to add extra padding and to set the general adjustment of position and size of enclosed contents.",
+      "attributes": [
+        {
+          "name": "depth",
+          "description": "A `<length-percentage>` indicating the desired depth (below the baseline) of the element.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "height",
+          "description": "A `<length-percentage>` indicating the desired height (above the baseline) of the element.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "lspace",
+          "description": "A `<length-percentage>` indicating the horizontal location of the positioning point of the child content with respect to the positioning point of the element.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "voffset",
+          "description": "A `<length-percentage>` indicating the vertical location of the positioning point of the child content with respect to the positioning point of the element.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "width",
+          "description": "A `<length-percentage>` indicating the desired depth (below the baseline) of the element.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mpadded"
+        }
+      ]
+    },
+    {
+      "name": "mphantom",
+      "description": "The `<mphantom>` MathML element is rendered invisibly, but dimensions (such as height, width, and baseline position) are still kept.",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mphantom"
+        }
+      ]
+    },
+    {
+      "name": "mmultiscripts",
+      "description": "The `<mmultiscripts>` MathML element is used to attach an arbitrary number of subscripts and superscripts to an expression at once, generalizing the `<msubsup>` element. Scripts can be either prescripts (placed before the expression) or postscripts (placed after it).",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mmultiscripts"
+        }
+      ]
+    },
+    {
+      "name": "mroot",
+      "description": "The `<mroot>` MathML element is used to display roots with an explicit index.",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mroot"
+        }
+      ]
+    },
+    {
+      "name": "mrow",
+      "description": "The `<mrow>` MathML element is used to group sub-expressions, which usually contain one or more operators with their respective operands. This element renders as a horizontal row containing its arguments.",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mrow"
+        }
+      ]
+    },
+    {
+      "name": "ms",
+      "description": "The `<ms>` MathML element represents a string literal meant to be interpreted by programming languages and computer algebra systems.",
+      "attributes": [
+        {
+          "name": "lquote",
+          "description": "The opening quote to enclose the content.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "rquote",
+          "description": "The closing quote to enclose the content.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/ms"
+        }
+      ]
+    },
+    {
+      "name": "semantics",
+      "description": "The `<semantics>` MathML element associates annotations with a MathML expression, for example its text source as a lightweight markup language or mathematical meaning expressed in a special XML dialect.",
+      "attributes": [
+        {
+          "name": "encoding",
+          "description": "The encoding of the semantic information in the annotation.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/semantics"
+        }
+      ]
+    },
+    {
+      "name": "mspace",
+      "description": "The `<mspace>` MathML element is used to display a blank space, whose size is set by its attributes.",
+      "attributes": [
+        {
+          "name": "depth",
+          "description": "A `<length-percentage>` indicating the desired depth (below the baseline) of the element.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "height",
+          "description": "A `<length-percentage>` indicating the desired height (above the baseline) of the element.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "width",
+          "description": "A `<length-percentage>` indicating the desired depth (below the baseline) of the element.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mspace"
+        }
+      ]
+    },
+    {
+      "name": "msqrt",
+      "description": "The `<msqrt>` MathML element is used to display square roots (no index is displayed). The square root accepts only one argument, which leads to the following syntax: `<msqrt> base </msqrt>`.",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msqrt"
+        }
+      ]
+    },
+    {
+      "name": "mstyle",
+      "description": "The `<mstyle>` MathML element is used to change the style of its children.",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle"
+        }
+      ]
+    },
+    {
+      "name": "msub",
+      "description": "The `<msub>` MathML element is used to attach a subscript to an expression.",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msub"
+        }
+      ]
+    },
+    {
+      "name": "msubsup",
+      "description": "The `<msubsup>` MathML element is used to attach both a subscript and a superscript, together, to an expression. \n\nIt uses the following syntax: `<msubsup> base subscript superscript </msubsup>`.",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msubsup"
+        }
+      ]
+    },
+    {
+      "name": "mtable",
+      "description": "The `<mtable>` MathML element allows you to create tables or matrices. Its children are `<mtr>` elements (representing rows), each of them having `<mtd>` elements as its children (representing cells). These elements are similar to `<table>`, `<tr>` and `<td>` elements of HTML.",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtable"
+        }
+      ]
+    },
+    {
+      "name": "mtd",
+      "description": "The `<mtd>` MathML element represents a cell in a table or a matrix. It may only appear in a `<mtr>` element. This element is similar to the `<td>` element of HTML.",
+      "attributes": [
+        {
+          "name": "columnspan",
+          "description": "A non-negative integer value that indicates on how many columns does the cell extend.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "rowspan",
+          "description": "A non-negative integer value that indicates on how many rows does the cell extend.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtd"
+        }
+      ]
+    },
+    {
+      "name": "mtext",
+      "description": "The `<mtext>` MathML element is used to render arbitrary text with no notational meaning, such as comments or annotations. \nTo display text with notational meaning, use `<mi>`, `<mn>`, `<mo>` or `<ms>` instead.",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtext"
+        }
+      ]
+    },
+    {
+      "name": "mtr",
+      "description": "The `<mtr>` MathML element represents a row in a table or a matrix. It may only appear in a `<mtable>` element and its children are `<mtd>` elements representing cells. This element is similar to the `<tr>` element of HTML.",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtr"
+        }
+      ]
+    },
+    {
+      "name": "munder",
+      "description": "The `<munder>` MathML element is used to attach an accent or a limit under an expression. It uses the following syntax: `<munder> base underscript </munder>`",
+      "attributes": [
+        {
+          "name": "accentunder",
+          "description": "A `<boolean>` indicating whether the under script should be treated as an accent (i.e. drawn bigger and closer to the base expression).",
+          "values": [
+            {
+              "name": "false"
+            },
+            {
+              "name": "true"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munder"
+        }
+      ]
+    },
+    {
+      "name": "munderover",
+      "description": "The `<munderover>` MathML element is used to attach accents or limits both under and over an expression.",
+      "attributes": [
+        {
+          "name": "accent",
+          "description": "A `<boolean>` indicating whether the over script should be treated as an accent (i.e. drawn bigger and closer to the base expression).",
+          "values": [
+            {
+              "name": "false"
+            },
+            {
+              "name": "true"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        },
+        {
+          "name": "accentunder",
+          "description": "A `<boolean>` indicating whether the under script should be treated as an accent (i.e. drawn bigger and closer to the base expression).",
+          "values": [
+            {
+              "name": "false"
+            },
+            {
+              "name": "true"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munderover"
+        }
+      ]
+    }
+  ],
+  "globalAttributes": [
+    {
+      "name": "dir",
+      "description": "The text direction. Possible values are either `ltr` (left to right) or `rtl` (right to left).",
+      "values": [
+        {
+          "name": "ltr"
+        },
+        {
+          "name": "rtl"
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+        }
+      ]
+    },
+    {
+      "name": "displaystyle",
+      "description": "A `<boolean>` specifying whether to set the math-style to `normal` (if true) or `compact` (otherwise).",
+      "values": [
+        {
+          "name": "true"
+        },
+        {
+          "name": "false"
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+        }
+      ]
+    },
+    {
+      "name": "href",
+      "description": "Used to set a hyperlink to a specified URI.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+        }
+      ]
+    },
+    {
+      "name": "id",
+      "description": "Sets up a unique identifier associated with the element.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+        }
+      ]
+    },
+    {
+      "name": "mathbackground",
+      "description": "A background-color for the element.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+        }
+      ]
+    },
+    {
+      "name": "mathcolor",
+      "description": "A color for the element.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+        }
+      ]
+    },
+    {
+      "name": "mathsize",
+      "description": "A `<length-percentage>` used as a font-size for the element.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+        }
+      ]
+    },
+    {
+      "name": "mathvariant",
+      "description": "The logical class of token elements, which varies in typography.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+        }
+      ]
+    },
+    {
+      "name": "scriptlevel",
+      "description": "Specifies a math-depth for the element. See the scriptlevel page for accepted values and mapping.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+        }
+      ]
+    }
+  ]
+}
