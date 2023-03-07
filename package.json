@@ -28,7 +28,7 @@
     "typescript"
   ],
   "devDependencies": {
-    "@vscode/vsce": "^2.18.0",
+    "@vscode/vsce": "2.18.0",
     "lint-staged": "13.1.2",
     "rome": "11.0.0",
     "simple-git-hooks": "2.8.1",
