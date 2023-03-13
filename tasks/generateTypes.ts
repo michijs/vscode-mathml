@@ -1,6 +1,10 @@
 import * as fs from "fs";
-import { HTMLDataV1 } from "vscode-html-languageservice";
+import { HTMLDataV1, IAttributeData } from "vscode-html-languageservice";
 import { element, attribute } from "./utils";
+import htmlData from "@vscode/web-custom-data/data/browsers.html-data.json";
+const MathMLEvents = htmlData.globalAttributes.filter((x) =>
+  x.name.startsWith("on"),
+) as unknown as IAttributeData[];
 
 const jsonData: HTMLDataV1 = {
   version: 1.1,
@@ -277,6 +281,7 @@ const jsonData: HTMLDataV1 = {
       "scriptlevel",
       "Specifies a math-depth for the element. See the scriptlevel page for accepted values and mapping.",
     ),
+    ...MathMLEvents,
   ],
 };
 

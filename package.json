@@ -4,12 +4,19 @@
   "description": "MathML extension for VS Code",
   "author": "Lucas M. Segurado",
   "icon": "media/mathml.png",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "publisher": "michijs",
   "repository": "https://github.com/michijs/vscode-mathml",
   "files": [
     "dist/"
   ],
+  "galleryBanner": {
+    "color": "#154db5",
+    "theme": "dark"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/michijs"
+  },
   "license": "MIT",
   "engines": {
     "vscode": "^1.38.0"
@@ -28,6 +35,7 @@
     "typescript"
   ],
   "devDependencies": {
+    "@vscode/web-custom-data": "0.4.5",
     "@vscode/vsce": "2.18.0",
     "lint-staged": "13.2.0",
     "rome": "11.0.0",
