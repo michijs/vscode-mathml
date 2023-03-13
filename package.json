@@ -29,7 +29,7 @@
   ],
   "devDependencies": {
     "@vscode/vsce": "2.18.0",
-    "lint-staged": "13.1.2",
+    "lint-staged": "13.2.0",
     "rome": "11.0.0",
     "simple-git-hooks": "2.8.1",
     "ts-node": "10.9.1",
