@@ -305,12 +305,6 @@ async function main() {
         "id",
         "Sets up a unique identifier associated with the element.",
       ),
-      attribute("mathbackground", "A background-color for the element."),
-      attribute("mathcolor", "A color for the element."),
-      attribute(
-        "mathsize",
-        "A `<length-percentage>` used as a font-size for the element.",
-      ),
       attribute(
         "mathvariant",
         "The logical class of token elements, which varies in typography.",
