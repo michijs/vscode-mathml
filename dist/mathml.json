@@ -750,36 +750,6 @@
       ]
     },
     {
-      "name": "mathbackground",
-      "description": "A background-color for the element.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
-        }
-      ]
-    },
-    {
-      "name": "mathcolor",
-      "description": "A color for the element.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
-        }
-      ]
-    },
-    {
-      "name": "mathsize",
-      "description": "A `<length-percentage>` used as a font-size for the element.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
-        }
-      ]
-    },
-    {
       "name": "mathvariant",
       "description": "The logical class of token elements, which varies in typography.",
       "references": [
