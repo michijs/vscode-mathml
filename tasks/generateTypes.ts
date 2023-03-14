@@ -285,8 +285,23 @@ const jsonData: HTMLDataV1 = {
   ],
 };
 
+const orderedData: HTMLDataV1 = {
+  ...jsonData,
+  tags: jsonData.tags
+    ?.map((x) => ({
+      ...x,
+      attributes: x.attributes.sort((atA, atB) =>
+        atA.name.localeCompare(atB.name),
+      ),
+    }))
+    .sort((elA, elB) => elA.name.localeCompare(elB.name)),
+  globalAttributes: jsonData.globalAttributes?.sort((atA, atB) =>
+    atA.name.localeCompare(atB.name),
+  ),
+};
+
 fs.writeFileSync(
   "./dist/mathml.json",
-  JSON.stringify(jsonData, null, 2),
+  JSON.stringify(orderedData, null, 2),
   "utf-8",
 );

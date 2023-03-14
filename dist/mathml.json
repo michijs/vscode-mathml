@@ -102,6 +102,17 @@
       ]
     },
     {
+      "name": "mmultiscripts",
+      "description": "The `<mmultiscripts>` MathML element is used to attach an arbitrary number of subscripts and superscripts to an expression at once, generalizing the `<msubsup>` element. Scripts can be either prescripts (placed before the expression) or postscripts (placed after it).",
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mmultiscripts"
+        }
+      ]
+    },
+    {
       "name": "mn",
       "description": "The `<mn>` MathML element represents a numeric literal which is normally a sequence of digits with a possible separator (a dot or a comma). However, it is also allowed to have arbitrary text in it which is actually a numeric quantity, for example \"eleven\".",
       "attributes": [],
@@ -376,17 +387,6 @@
       ]
     },
     {
-      "name": "mmultiscripts",
-      "description": "The `<mmultiscripts>` MathML element is used to attach an arbitrary number of subscripts and superscripts to an expression at once, generalizing the `<msubsup>` element. Scripts can be either prescripts (placed before the expression) or postscripts (placed after it).",
-      "attributes": [],
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mmultiscripts"
-        }
-      ]
-    },
-    {
       "name": "mroot",
       "description": "The `<mroot>` MathML element is used to display roots with an explicit index.",
       "attributes": [],
@@ -437,28 +437,6 @@
         {
           "name": "MDN Reference",
           "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/ms"
-        }
-      ]
-    },
-    {
-      "name": "semantics",
-      "description": "The `<semantics>` MathML element associates annotations with a MathML expression, for example its text source as a lightweight markup language or mathematical meaning expressed in a special XML dialect.",
-      "attributes": [
-        {
-          "name": "encoding",
-          "description": "The encoding of the semantic information in the annotation.",
-          "references": [
-            {
-              "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
-            }
-          ]
-        }
-      ],
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/semantics"
         }
       ]
     },
@@ -690,6 +668,28 @@
           "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munderover"
         }
       ]
+    },
+    {
+      "name": "semantics",
+      "description": "The `<semantics>` MathML element associates annotations with a MathML expression, for example its text source as a lightweight markup language or mathematical meaning expressed in a special XML dialect.",
+      "attributes": [
+        {
+          "name": "encoding",
+          "description": "The encoding of the semantic information in the annotation.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/semantics"
+        }
+      ]
     }
   ],
   "globalAttributes": [
@@ -752,16 +752,6 @@
     {
       "name": "mathvariant",
       "description": "The logical class of token elements, which varies in typography.",
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
-        }
-      ]
-    },
-    {
-      "name": "scriptlevel",
-      "description": "Specifies a math-depth for the element. See the scriptlevel page for accepted values and mapping.",
       "references": [
         {
           "name": "MDN Reference",
@@ -986,6 +976,20 @@
       }
     },
     {
+      "name": "onmouseenter",
+      "description": {
+        "kind": "markdown",
+        "value": "A pointing device is moved onto the element that has the listener attached."
+      }
+    },
+    {
+      "name": "onmouseleave",
+      "description": {
+        "kind": "markdown",
+        "value": "A pointing device is moved off the element that has the listener attached."
+      }
+    },
+    {
       "name": "onmousemove",
       "description": {
         "kind": "markdown",
@@ -1017,20 +1021,6 @@
       "name": "onmousewheel"
     },
     {
-      "name": "onmouseenter",
-      "description": {
-        "kind": "markdown",
-        "value": "A pointing device is moved onto the element that has the listener attached."
-      }
-    },
-    {
-      "name": "onmouseleave",
-      "description": {
-        "kind": "markdown",
-        "value": "A pointing device is moved off the element that has the listener attached."
-      }
-    },
-    {
       "name": "onpause",
       "description": {
         "kind": "markdown",
@@ -1052,6 +1042,76 @@
       }
     },
     {
+      "name": "onpointercancel",
+      "description": {
+        "kind": "markdown",
+        "value": "The pointer is unlikely to produce any more events."
+      }
+    },
+    {
+      "name": "onpointerdown",
+      "description": {
+        "kind": "markdown",
+        "value": "The pointer enters the active buttons state."
+      }
+    },
+    {
+      "name": "onpointerenter",
+      "description": {
+        "kind": "markdown",
+        "value": "Pointing device is moved inside the hit-testing boundary."
+      }
+    },
+    {
+      "name": "onpointerleave",
+      "description": {
+        "kind": "markdown",
+        "value": "Pointing device is moved out of the hit-testing boundary."
+      }
+    },
+    {
+      "name": "onpointerlockchange",
+      "description": {
+        "kind": "markdown",
+        "value": "The pointer was locked or released."
+      }
+    },
+    {
+      "name": "onpointerlockerror",
+      "description": {
+        "kind": "markdown",
+        "value": "It was impossible to lock the pointer for technical reasons or because the permission was denied."
+      }
+    },
+    {
+      "name": "onpointermove",
+      "description": {
+        "kind": "markdown",
+        "value": "The pointer changed coordinates."
+      }
+    },
+    {
+      "name": "onpointerout",
+      "description": {
+        "kind": "markdown",
+        "value": "The pointing device moved out of hit-testing boundary or leaves detectable hover range."
+      }
+    },
+    {
+      "name": "onpointerover",
+      "description": {
+        "kind": "markdown",
+        "value": "The pointing device is moved into the hit-testing boundary."
+      }
+    },
+    {
+      "name": "onpointerup",
+      "description": {
+        "kind": "markdown",
+        "value": "The pointer leaves the active buttons state."
+      }
+    },
+    {
       "name": "onprogress",
       "description": {
         "kind": "markdown",
@@ -1066,6 +1126,13 @@
       }
     },
     {
+      "name": "onreadystatechange",
+      "description": {
+        "kind": "markdown",
+        "value": "The readyState attribute of a document has changed."
+      }
+    },
+    {
       "name": "onreset",
       "description": {
         "kind": "markdown",
@@ -1077,13 +1144,6 @@
       "description": {
         "kind": "markdown",
         "value": "The document view has been resized."
-      }
-    },
-    {
-      "name": "onreadystatechange",
-      "description": {
-        "kind": "markdown",
-        "value": "The readyState attribute of a document has changed."
       }
     },
     {
@@ -1164,74 +1224,14 @@
       }
     },
     {
-      "name": "onpointercancel",
-      "description": {
-        "kind": "markdown",
-        "value": "The pointer is unlikely to produce any more events."
-      }
-    },
-    {
-      "name": "onpointerdown",
-      "description": {
-        "kind": "markdown",
-        "value": "The pointer enters the active buttons state."
-      }
-    },
-    {
-      "name": "onpointerenter",
-      "description": {
-        "kind": "markdown",
-        "value": "Pointing device is moved inside the hit-testing boundary."
-      }
-    },
-    {
-      "name": "onpointerleave",
-      "description": {
-        "kind": "markdown",
-        "value": "Pointing device is moved out of the hit-testing boundary."
-      }
-    },
-    {
-      "name": "onpointerlockchange",
-      "description": {
-        "kind": "markdown",
-        "value": "The pointer was locked or released."
-      }
-    },
-    {
-      "name": "onpointerlockerror",
-      "description": {
-        "kind": "markdown",
-        "value": "It was impossible to lock the pointer for technical reasons or because the permission was denied."
-      }
-    },
-    {
-      "name": "onpointermove",
-      "description": {
-        "kind": "markdown",
-        "value": "The pointer changed coordinates."
-      }
-    },
-    {
-      "name": "onpointerout",
-      "description": {
-        "kind": "markdown",
-        "value": "The pointing device moved out of hit-testing boundary or leaves detectable hover range."
-      }
-    },
-    {
-      "name": "onpointerover",
-      "description": {
-        "kind": "markdown",
-        "value": "The pointing device is moved into the hit-testing boundary."
-      }
-    },
-    {
-      "name": "onpointerup",
-      "description": {
-        "kind": "markdown",
-        "value": "The pointer leaves the active buttons state."
-      }
+      "name": "scriptlevel",
+      "description": "Specifies a math-depth for the element. See the scriptlevel page for accepted values and mapping.",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+        }
+      ]
     }
   ]
 }
