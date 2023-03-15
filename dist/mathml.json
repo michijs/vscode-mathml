@@ -92,17 +92,6 @@
     },
     {
       "name": "mmultiscripts",
-      "description": "The `<mmultiscripts>` MathML element is used to attach an arbitrary number of subscripts and superscripts to an expression at once, generalizing the `<msubsup> element`. Scripts can be either prescripts (placed before the expression) or postscripts (placed after it).",
-      "attributes": [],
-      "references": [
-        {
-          "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mmultiscripts"
-        }
-      ]
-    },
-    {
-      "name": "mmultiscripts",
       "description": "The `<mmultiscripts>` MathML element is used to attach an arbitrary number of subscripts and superscripts to an expression at once, generalizing the `<msubsup>` element. Scripts can be either prescripts (placed before the expression) or postscripts (placed after it).",
       "attributes": [],
       "references": [

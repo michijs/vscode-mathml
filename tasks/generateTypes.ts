@@ -42,10 +42,6 @@ const jsonData: HTMLDataV1 = {
       "The `<mi>` MathML element indicates that the content should be rendered as an identifier such as function names, variables or symbolic constants. You can also have arbitrary text in it to mark up terms.",
     ),
     element(
-      "mmultiscripts",
-      "The `<mmultiscripts>` MathML element is used to attach an arbitrary number of subscripts and superscripts to an expression at once, generalizing the `<msubsup> element`. Scripts can be either prescripts (placed before the expression) or postscripts (placed after it).",
-    ),
-    element(
       "mn",
       'The `<mn>` MathML element represents a numeric literal which is normally a sequence of digits with a possible separator (a dot or a comma). However, it is also allowed to have arbitrary text in it which is actually a numeric quantity, for example "eleven".',
     ),
