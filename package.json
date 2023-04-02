@@ -57,8 +57,8 @@
     "pre-commit": "npx lint-staged"
   },
   "lint-staged": {
-    "*.ts": [
-      "rome check --apply-suggested",
+    "*.{js,jsx,ts,tsx}": [
+      "rome check --apply",
       "rome format --write"
     ]
   }
