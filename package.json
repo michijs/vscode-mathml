@@ -39,9 +39,6 @@
     "change-package-name": "1.0.5",
     "@vscode/web-custom-data": "0.4.6",
     "@vscode/vsce": "2.19.0",
-    "lint-staged": "13.2.2",
-    "rome": "12.1.0",
-    "simple-git-hooks": "2.8.1",
     "ts-node": "10.9.1",
     "typescript": "5.0.4",
     "vscode-html-languageservice": "5.0.5"
@@ -52,14 +49,5 @@
         "./dist/mathml.json"
       ]
     }
-  },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "rome check --apply",
-      "rome format --write"
-    ]
   }
 }
