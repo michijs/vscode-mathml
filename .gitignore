@@ -37,3 +37,4 @@ loader
 /HTMLElements
 /SVGElements
 .eslintcache
+rome.json
