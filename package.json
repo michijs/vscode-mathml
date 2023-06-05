@@ -41,7 +41,7 @@
     "@vscode/vsce": "2.19.0",
     "ts-node": "10.9.1",
     "typescript": "5.0.4",
-    "vscode-html-languageservice": "5.0.5"
+    "vscode-html-languageservice": "5.0.6"
   },
   "contributes": {
     "html": {
