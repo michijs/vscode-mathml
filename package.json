@@ -37,7 +37,7 @@
   ],
   "devDependencies": {
     "change-package-name": "1.0.5",
-    "@vscode/web-custom-data": "0.4.6",
+    "@vscode/web-custom-data": "0.4.7",
     "@vscode/vsce": "2.21.0",
     "ts-node": "10.9.1",
     "typescript": "5.2.2",
