@@ -46,5 +46,4 @@ jobs:
     needs: submit-changes
     uses: michijs/.github/.github/workflows/lint.yml@main
     name: "Run lint"
-    secrets:
-      GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    secrets: inherit
