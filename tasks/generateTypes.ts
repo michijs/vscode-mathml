@@ -1,7 +1,7 @@
 import * as fs from "fs";
-import { HTMLDataV1, IAttributeData } from "vscode-html-languageservice";
-import { element, attribute } from "./utils";
 import htmlData from "@vscode/web-custom-data/data/browsers.html-data.json";
+import { HTMLDataV1, IAttributeData } from "vscode-html-languageservice";
+import { attribute, element } from "./utils";
 const MathMLEvents = htmlData.globalAttributes.filter((x) =>
   x.name.startsWith("on"),
 ) as unknown as IAttributeData[];
