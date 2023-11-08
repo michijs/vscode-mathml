@@ -12,6 +12,7 @@ log.txt
 *.sublime-workspace
 *.css.js
 *.vsix
+bun.lockb
 
 .stencil/
 .idea/
