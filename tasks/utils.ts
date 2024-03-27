@@ -1,4 +1,4 @@
-import { IAttributeData } from "vscode-html-languageservice";
+import type { IAttributeData } from "vscode-html-languageservice";
 
 const mdnReference = (url?: string) =>
   url
