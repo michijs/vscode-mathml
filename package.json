@@ -4,7 +4,7 @@
   "description": "MathML extension for VS Code",
   "author": "Lucas M. Segurado",
   "icon": "media/mathml.png",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "michijs",
   "repository": {
     "type": "git",
