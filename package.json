@@ -40,7 +40,7 @@
   "devDependencies": {
     "change-package-name": "1.0.5",
     "@vscode/web-custom-data": "0.4.9",
-    "@vscode/vsce": "2.26.0",
+    "@vscode/vsce": "2.30.0",
     "ts-node": "10.9.2",
     "typescript": "5.5.2",
     "vscode-html-languageservice": "5.2.0"
