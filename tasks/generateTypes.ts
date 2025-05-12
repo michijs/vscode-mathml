@@ -2,6 +2,7 @@ import * as fs from "fs";
 import type { HTMLDataV1, IAttributeData } from "vscode-html-languageservice";
 import { element, attribute } from "./utils";
 import htmlData from "@vscode/web-custom-data/data/browsers.html-data.json";
+import { addCompatData, addCompatDataAttrs, lookForMissingTags } from "./compatData";
 const MathMLEvents = htmlData.globalAttributes.filter((x) =>
   x.name.startsWith("on"),
 ) as unknown as IAttributeData[];
@@ -40,6 +41,13 @@ const jsonData: HTMLDataV1 = {
     element(
       "mi",
       "The `<mi>` MathML element indicates that the content should be rendered as an identifier such as function names, variables or symbolic constants. You can also have arbitrary text in it to mark up terms.",
+      [
+        attribute(
+          "mathvariant",
+          "A value of normal can be used to reset a single character to the normal font.",
+          ["normal"]
+        ),
+      ],
     ),
     element(
       "mn",
@@ -94,6 +102,15 @@ const jsonData: HTMLDataV1 = {
           "symmetric",
           "A `<boolean>` indicating whether a stretchy operator should be vertically symmetric around the imaginary math axis (centered fraction line).",
           ["false", "true"],
+        ),
+        attribute(
+          "form",
+          "An enumerated attribute specifying how the operator is to be presented. For example, depending on the value, a different amount of space might be rendered on either side of the operator.",
+          [
+            "prefix",
+            "infix",
+            "postfix"
+          ],
         ),
       ],
     ),
@@ -255,6 +272,36 @@ const jsonData: HTMLDataV1 = {
         ),
       ],
     ),
+    element(
+      "annotation",
+      "The `<annotation>` MathML element contains an annotation to the MathML expression in a textual format, for example LaTeX.",
+      [
+        attribute(
+          "encoding",
+          "The encoding of the semantic information in the annotation.",
+        ),
+      ],
+    ),
+    element(
+      "annotation-xml",
+      "The `<annotation-xml>` MathML element contains an annotation to the MathML expression in a textual format, for example LaTeX.",
+      [
+        attribute(
+          "encoding",
+          "The encoding of the semantic information in the annotation.",
+        ),
+      ],
+    ),
+    element(
+      "mprescripts",
+      "The `<mprescripts>` MathML element is used within an <mmultiscripts> element to indicate the start of the pre-scripts elements (subscripts and superscripts that are placed before the base expression)."
+    ),
+    element(
+      "msup",
+      `The \`<msup>\` MathML element is used is used to attach a superscript to an expression.
+
+It uses the following syntax: \`<msup> base superscript </msup>\`.`
+    ),
   ],
   globalAttributes: [
     attribute(
@@ -281,15 +328,20 @@ const jsonData: HTMLDataV1 = {
   ],
 };
 
+addCompatDataAttrs(jsonData.globalAttributes!)
+
 const orderedData: HTMLDataV1 = {
   ...jsonData,
   tags: jsonData.tags
-    ?.map((x) => ({
-      ...x,
-      attributes: x.attributes.sort((atA, atB) =>
-        atA.name.localeCompare(atB.name),
-      ),
-    }))
+    ?.map((x) => {
+      addCompatData(x);
+      return {
+        ...x,
+        attributes: x.attributes.sort((atA, atB) =>
+          atA.name.localeCompare(atB.name),
+        ),
+      };
+    })
     .sort((elA, elB) => elA.name.localeCompare(elB.name)),
   globalAttributes: jsonData.globalAttributes?.sort((atA, atB) =>
     atA.name.localeCompare(atB.name),
@@ -301,3 +353,5 @@ fs.writeFileSync(
   JSON.stringify(orderedData, null, 2),
   "utf-8",
 );
+
+lookForMissingTags(orderedData.tags!);

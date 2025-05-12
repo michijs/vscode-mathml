@@ -2,8 +2,87 @@
   "version": 1.1,
   "tags": [
     {
+      "name": "annotation",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<annotation>` MathML element contains an annotation to the MathML expression in a textual format, for example LaTeX."
+      },
+      "attributes": [
+        {
+          "name": "encoding",
+          "description": "The encoding of the semantic information in the annotation.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/encoding"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/annotation"
+        }
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S5",
+        "SM4.2"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
+    },
+    {
+      "name": "annotation-xml",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<annotation-xml>` MathML element contains an annotation to the MathML expression in a textual format, for example LaTeX."
+      },
+      "attributes": [
+        {
+          "name": "encoding",
+          "description": "The encoding of the semantic information in the annotation.",
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/encoding"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/annotation-xml"
+        }
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S5",
+        "SM4.2"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
+    },
+    {
       "name": "math",
-      "description": "The `<math>` MathML element is the top-level MathML element, used to write a single mathematical formula. It can be placed in HTML content where flow content is permitted.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<math>` MathML element is the top-level MathML element, used to write a single mathematical formula. It can be placed in HTML content where flow content is permitted."
+      },
       "attributes": [
         {
           "name": "display",
@@ -19,9 +98,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/math"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF4",
+            "FFA4",
+            "S5.1",
+            "SM5"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "xmlns",
@@ -34,7 +126,7 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/xmlns"
             }
           ]
         }
@@ -42,24 +134,56 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/math"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/math"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF4",
+        "FFA4",
+        "S5.1",
+        "SM5"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "merror",
-      "description": "The `<merror>` MathML element is used to display contents as error messages. The intent of this element is to provide a standard way for programs that generate MathML from other input to report syntax errors.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<merror>` MathML element is used to display contents as error messages. The intent of this element is to provide a standard way for programs that generate MathML from other input to report syntax errors."
+      },
       "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/merror"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/merror"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mfrac",
-      "description": "The `<mfrac>` MathML element is used to display fractions. It can also be used to mark up fraction-like objects such as binomial coefficients and Legendre symbols.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mfrac>` MathML element is used to display fractions. It can also be used to mark up fraction-like objects such as binomial coefficients and Legendre symbols."
+      },
       "attributes": [
         {
           "name": "linethickness",
@@ -67,54 +191,160 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/linethickness"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S9",
+            "SM9"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         }
       ],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mfrac"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mfrac"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S5.1",
+        "SM5"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mi",
-      "description": "The `<mi>` MathML element indicates that the content should be rendered as an identifier such as function names, variables or symbolic constants. You can also have arbitrary text in it to mark up terms.",
-      "attributes": [],
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mi>` MathML element indicates that the content should be rendered as an identifier such as function names, variables or symbolic constants. You can also have arbitrary text in it to mark up terms."
+      },
+      "attributes": [
+        {
+          "name": "mathvariant",
+          "description": "A value of normal can be used to reset a single character to the normal font.",
+          "values": [
+            {
+              "name": "normal"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/mathvariant"
+            }
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF70",
+            "FFA79",
+            "S10",
+            "SM10"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
+        }
+      ],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mi"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mi"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mmultiscripts",
-      "description": "The `<mmultiscripts>` MathML element is used to attach an arbitrary number of subscripts and superscripts to an expression at once, generalizing the `<msubsup>` element. Scripts can be either prescripts (placed before the expression) or postscripts (placed after it).",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mmultiscripts>` MathML element is used to attach an arbitrary number of subscripts and superscripts to an expression at once, generalizing the `<msubsup>` element. Scripts can be either prescripts (placed before the expression) or postscripts (placed after it)."
+      },
       "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mmultiscripts"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mmultiscripts"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mn",
-      "description": "The `<mn>` MathML element represents a numeric literal which is normally a sequence of digits with a possible separator (a dot or a comma). However, it is also allowed to have arbitrary text in it which is actually a numeric quantity, for example \"eleven\".",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mn>` MathML element represents a numeric literal which is normally a sequence of digits with a possible separator (a dot or a comma). However, it is also allowed to have arbitrary text in it which is actually a numeric quantity, for example \"eleven\"."
+      },
       "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mn"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mn"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mo",
-      "description": "The `<mo>` MathML element represents an operator in a broad sense. Besides operators in strict mathematical meaning, this element also includes \"operators\" like parentheses, separators like comma and semicolon, or \"absolute value\" bars.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mo>` MathML element represents an operator in a broad sense. Besides operators in strict mathematical meaning, this element also includes \"operators\" like parentheses, separators like comma and semicolon, or \"absolute value\" bars."
+      },
       "attributes": [
         {
           "name": "fence",
@@ -130,9 +360,43 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/fence"
             }
           ]
+        },
+        {
+          "name": "form",
+          "description": "An enumerated attribute specifying how the operator is to be presented. For example, depending on the value, a different amount of space might be rendered on either side of the operator.",
+          "values": [
+            {
+              "name": "prefix"
+            },
+            {
+              "name": "infix"
+            },
+            {
+              "name": "postfix"
+            }
+          ],
+          "references": [
+            {
+              "name": "MDN Reference",
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/form"
+            }
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S8",
+            "SM8"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "largeop",
@@ -148,9 +412,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/largeop"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S8",
+            "SM8"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "lspace",
@@ -158,9 +435,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/lspace"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S8",
+            "SM8"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "maxsize",
@@ -168,9 +458,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/maxsize"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S8",
+            "SM8"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "minsize",
@@ -178,9 +481,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/minsize"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S8",
+            "SM8"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "movablelimits",
@@ -196,9 +512,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/movablelimits"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S10",
+            "SM10"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "rspace",
@@ -206,9 +535,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/rspace"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S8",
+            "SM8"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "separator",
@@ -224,7 +566,7 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/separator"
             }
           ]
         },
@@ -242,9 +584,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/stretchy"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S5",
+            "SM4.2"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "symmetric",
@@ -260,21 +615,50 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/symmetric"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S8",
+            "SM8"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         }
       ],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mo"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mo"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S5",
+        "SM4.2"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mover",
-      "description": "The `<mover>` MathML element represents an operator in a broad sense. Besides operators in strict mathematical meaning, this element also includes \"operators\" like parentheses, separators like comma and semicolon, or \"absolute value\" bars.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mover>` MathML element represents an operator in a broad sense. Besides operators in strict mathematical meaning, this element also includes \"operators\" like parentheses, separators like comma and semicolon, or \"absolute value\" bars."
+      },
       "attributes": [
         {
           "name": "accent",
@@ -290,21 +674,50 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/accent"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S10",
+            "SM10"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         }
       ],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mover"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mover"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mpadded",
-      "description": "The `<mpadded>` MathML element is used to add extra padding and to set the general adjustment of position and size of enclosed contents.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mpadded>` MathML element is used to add extra padding and to set the general adjustment of position and size of enclosed contents."
+      },
       "attributes": [
         {
           "name": "depth",
@@ -312,9 +725,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/depth"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S10",
+            "SM10"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "height",
@@ -322,9 +748,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/height"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S10",
+            "SM10"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "lspace",
@@ -332,9 +771,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/lspace"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S10",
+            "SM10"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "voffset",
@@ -342,9 +794,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/voffset"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF7",
+            "FFA7",
+            "S10",
+            "SM10"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "width",
@@ -352,54 +817,158 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/width"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S10",
+            "SM10"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         }
       ],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mpadded"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mpadded"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mphantom",
-      "description": "The `<mphantom>` MathML element is rendered invisibly, but dimensions (such as height, width, and baseline position) are still kept.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mphantom>` MathML element is rendered invisibly, but dimensions (such as height, width, and baseline position) are still kept."
+      },
       "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mphantom"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mphantom"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
+    },
+    {
+      "name": "mprescripts",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mprescripts>` MathML element is used within an <mmultiscripts> element to indicate the start of the pre-scripts elements (subscripts and superscripts that are placed before the base expression)."
+      },
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mprescripts"
+        }
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mroot",
-      "description": "The `<mroot>` MathML element is used to display roots with an explicit index.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mroot>` MathML element is used to display roots with an explicit index."
+      },
       "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mroot"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mroot"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mrow",
-      "description": "The `<mrow>` MathML element is used to group sub-expressions, which usually contain one or more operators with their respective operands. This element renders as a horizontal row containing its arguments.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mrow>` MathML element is used to group sub-expressions, which usually contain one or more operators with their respective operands. This element renders as a horizontal row containing its arguments."
+      },
       "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mrow"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mrow"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "ms",
-      "description": "The `<ms>` MathML element represents a string literal meant to be interpreted by programming languages and computer algebra systems.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<ms>` MathML element represents a string literal meant to be interpreted by programming languages and computer algebra systems."
+      },
       "attributes": [
         {
           "name": "lquote",
@@ -407,7 +976,7 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/lquote"
             }
           ]
         },
@@ -417,7 +986,7 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/rquote"
             }
           ]
         }
@@ -425,13 +994,29 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/ms"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/ms"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S9",
+        "SM9"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mspace",
-      "description": "The `<mspace>` MathML element is used to display a blank space, whose size is set by its attributes.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mspace>` MathML element is used to display a blank space, whose size is set by its attributes."
+      },
       "attributes": [
         {
           "name": "depth",
@@ -439,9 +1024,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/depth"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S7",
+            "SM7"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "height",
@@ -449,9 +1047,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/height"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S7",
+            "SM7"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "width",
@@ -459,76 +1070,212 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/width"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S7",
+            "SM7"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         }
       ],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mspace"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mspace"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S7",
+        "SM7"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "msqrt",
-      "description": "The `<msqrt>` MathML element is used to display square roots (no index is displayed). The square root accepts only one argument, which leads to the following syntax: `<msqrt> base </msqrt>`.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<msqrt>` MathML element is used to display square roots (no index is displayed). The square root accepts only one argument, which leads to the following syntax: `<msqrt> base </msqrt>`."
+      },
       "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msqrt"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/msqrt"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S5.1",
+        "SM5"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mstyle",
-      "description": "The `<mstyle>` MathML element is used to change the style of its children.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mstyle>` MathML element is used to change the style of its children."
+      },
       "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mstyle"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mstyle"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF6",
+        "FFA6",
+        "S5.1",
+        "SM5"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "msub",
-      "description": "The `<msub>` MathML element is used to attach a subscript to an expression.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<msub>` MathML element is used to attach a subscript to an expression."
+      },
       "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msub"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/msub"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "msubsup",
-      "description": "The `<msubsup>` MathML element is used to attach both a subscript and a superscript, together, to an expression. \n\nIt uses the following syntax: `<msubsup> base subscript superscript </msubsup>`.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<msubsup>` MathML element is used to attach both a subscript and a superscript, together, to an expression. \n\nIt uses the following syntax: `<msubsup> base subscript superscript </msubsup>`."
+      },
       "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/msubsup"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/msubsup"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
+    },
+    {
+      "name": "msup",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<msup>` MathML element is used is used to attach a superscript to an expression.\n\nIt uses the following syntax: `<msup> base superscript </msup>`."
+      },
+      "attributes": [],
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/msup"
+        }
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mtable",
-      "description": "The `<mtable>` MathML element allows you to create tables or matrices. Its children are `<mtr>` elements (representing rows), each of them having `<mtd>` elements as its children (representing cells). These elements are similar to `<table>`, `<tr>` and `<td>` elements of HTML.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mtable>` MathML element allows you to create tables or matrices. Its children are `<mtr>` elements (representing rows), each of them having `<mtd>` elements as its children (representing cells). These elements are similar to `<table>`, `<tr>` and `<td>` elements of HTML."
+      },
       "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtable"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mtable"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S5.1",
+        "SM5"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mtd",
-      "description": "The `<mtd>` MathML element represents a cell in a table or a matrix. It may only appear in a `<mtr>` element. This element is similar to the `<td>` element of HTML.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mtd>` MathML element represents a cell in a table or a matrix. It may only appear in a `<mtr>` element. This element is similar to the `<td>` element of HTML."
+      },
       "attributes": [
         {
           "name": "columnspan",
@@ -536,9 +1283,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/columnspan"
             }
-          ]
+          ],
+          "browsers": [
+            "C117",
+            "CA117",
+            "E117",
+            "FF1",
+            "FFA4",
+            "S5.1",
+            "SM5"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-09-15"
+          }
         },
         {
           "name": "rowspan",
@@ -546,43 +1306,104 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/rowspan"
             }
-          ]
+          ],
+          "browsers": [
+            "C117",
+            "CA117",
+            "E117",
+            "FF1",
+            "FFA4",
+            "S5.1",
+            "SM5"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-09-15"
+          }
         }
       ],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtd"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mtd"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S5.1",
+        "SM5"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mtext",
-      "description": "The `<mtext>` MathML element is used to render arbitrary text with no notational meaning, such as comments or annotations. \nTo display text with notational meaning, use `<mi>`, `<mn>`, `<mo>` or `<ms>` instead.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mtext>` MathML element is used to render arbitrary text with no notational meaning, such as comments or annotations. \nTo display text with notational meaning, use `<mi>`, `<mn>`, `<mo>` or `<ms>` instead."
+      },
       "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtext"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mtext"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "mtr",
-      "description": "The `<mtr>` MathML element represents a row in a table or a matrix. It may only appear in a `<mtable>` element and its children are `<mtd>` elements representing cells. This element is similar to the `<tr>` element of HTML.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<mtr>` MathML element represents a row in a table or a matrix. It may only appear in a `<mtable>` element and its children are `<mtd>` elements representing cells. This element is similar to the `<tr>` element of HTML."
+      },
       "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/mtr"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mtr"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S5.1",
+        "SM5"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "munder",
-      "description": "The `<munder>` MathML element is used to attach an accent or a limit under an expression. It uses the following syntax: `<munder> base underscript </munder>`",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<munder>` MathML element is used to attach an accent or a limit under an expression. It uses the following syntax: `<munder> base underscript </munder>`"
+      },
       "attributes": [
         {
           "name": "accentunder",
@@ -598,21 +1419,50 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/accentunder"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S10",
+            "SM10"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         }
       ],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munder"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/munder"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S5.1",
+        "SM5"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "munderover",
-      "description": "The `<munderover>` MathML element is used to attach accents or limits both under and over an expression.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<munderover>` MathML element is used to attach accents or limits both under and over an expression."
+      },
       "attributes": [
         {
           "name": "accent",
@@ -628,9 +1478,22 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/accent"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S10",
+            "SM10"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         },
         {
           "name": "accentunder",
@@ -646,21 +1509,50 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/accentunder"
             }
-          ]
+          ],
+          "browsers": [
+            "C109",
+            "CA109",
+            "E109",
+            "FF1",
+            "FFA4",
+            "S10",
+            "SM10"
+          ],
+          "status": {
+            "baseline": "low",
+            "baseline_low_date": "2023-01-12"
+          }
         }
       ],
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/munderover"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/munderover"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S6",
+        "SM6"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "semantics",
-      "description": "The `<semantics>` MathML element associates annotations with a MathML expression, for example its text source as a lightweight markup language or mathematical meaning expressed in a special XML dialect.",
+      "description": {
+        "kind": "markdown",
+        "value": "The `<semantics>` MathML element associates annotations with a MathML expression, for example its text source as a lightweight markup language or mathematical meaning expressed in a special XML dialect."
+      },
       "attributes": [
         {
           "name": "encoding",
@@ -668,7 +1560,7 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/encoding"
             }
           ]
         }
@@ -676,9 +1568,22 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Element/semantics"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/semantics"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF1",
+        "FFA4",
+        "S5",
+        "SM4.2"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     }
   ],
   "globalAttributes": [
@@ -696,9 +1601,22 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Global_attributes/dir"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF70",
+        "FFA79",
+        "S8",
+        "SM8"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "displaystyle",
@@ -714,9 +1632,22 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Global_attributes/displaystyle"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF83",
+        "FFA83",
+        "S14",
+        "SM14"
+      ],
+      "status": {
+        "baseline": "low",
+        "baseline_low_date": "2023-01-12"
+      }
     },
     {
       "name": "href",
@@ -724,9 +1655,18 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Global_attributes/href"
         }
-      ]
+      ],
+      "browsers": [
+        "FF7",
+        "FFA7",
+        "S10",
+        "SM10"
+      ],
+      "status": {
+        "baseline": false
+      }
     },
     {
       "name": "id",
@@ -734,7 +1674,7 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+          "url": "https://developer.mozilla.org/docs/Web/HTML/Reference/Global_attributes/id"
         }
       ]
     },
@@ -744,7 +1684,7 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/mathvariant"
         }
       ]
     },
@@ -753,464 +1693,872 @@
       "description": {
         "kind": "markdown",
         "value": "The loading of a resource has been aborted."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onabort"
+        }
+      ]
     },
     {
       "name": "onblur",
       "description": {
         "kind": "markdown",
         "value": "An element has lost focus (does not bubble)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onblur"
+        }
+      ]
     },
     {
       "name": "oncanplay",
       "description": {
         "kind": "markdown",
         "value": "The user agent can play the media, but estimates that not enough data has been loaded to play the media up to its end without having to stop for further buffering of content."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/oncanplay"
+        }
+      ]
     },
     {
       "name": "oncanplaythrough",
       "description": {
         "kind": "markdown",
         "value": "The user agent can play the media up to its end without having to stop for further buffering of content."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/oncanplaythrough"
+        }
+      ]
     },
     {
       "name": "onchange",
       "description": {
         "kind": "markdown",
         "value": "The change event is fired for <input>, <select>, and <textarea> elements when a change to the element's value is committed by the user."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onchange"
+        }
+      ]
     },
     {
       "name": "onclick",
       "description": {
         "kind": "markdown",
         "value": "A pointing device button has been pressed and released on an element."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onclick"
+        }
+      ]
     },
     {
       "name": "oncontextmenu",
       "description": {
         "kind": "markdown",
         "value": "The right button of the mouse is clicked (before the context menu is displayed)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/oncontextmenu"
+        }
+      ]
     },
     {
       "name": "ondblclick",
       "description": {
         "kind": "markdown",
         "value": "A pointing device button is clicked twice on an element."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/ondblclick"
+        }
+      ]
     },
     {
       "name": "ondrag",
       "description": {
         "kind": "markdown",
         "value": "An element or text selection is being dragged (every 350ms)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/ondrag"
+        }
+      ]
     },
     {
       "name": "ondragend",
       "description": {
         "kind": "markdown",
         "value": "A drag operation is being ended (by releasing a mouse button or hitting the escape key)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/ondragend"
+        }
+      ]
     },
     {
       "name": "ondragenter",
       "description": {
         "kind": "markdown",
         "value": "A dragged element or text selection enters a valid drop target."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/ondragenter"
+        }
+      ]
     },
     {
       "name": "ondragleave",
       "description": {
         "kind": "markdown",
         "value": "A dragged element or text selection leaves a valid drop target."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/ondragleave"
+        }
+      ]
     },
     {
       "name": "ondragover",
       "description": {
         "kind": "markdown",
         "value": "An element or text selection is being dragged over a valid drop target (every 350ms)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/ondragover"
+        }
+      ]
     },
     {
       "name": "ondragstart",
       "description": {
         "kind": "markdown",
         "value": "The user starts dragging an element or text selection."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/ondragstart"
+        }
+      ]
     },
     {
       "name": "ondrop",
       "description": {
         "kind": "markdown",
         "value": "An element is dropped on a valid drop target."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/ondrop"
+        }
+      ]
     },
     {
       "name": "ondurationchange",
       "description": {
         "kind": "markdown",
         "value": "The duration attribute has been updated."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/ondurationchange"
+        }
+      ]
     },
     {
       "name": "onemptied",
       "description": {
         "kind": "markdown",
         "value": "The media has become empty; for example, this event is sent if the media has already been loaded (or partially loaded), and the load() method is called to reload it."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onemptied"
+        }
+      ]
     },
     {
       "name": "onended",
       "description": {
         "kind": "markdown",
         "value": "Playback has stopped because the end of the media was reached."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onended"
+        }
+      ]
     },
     {
       "name": "onerror",
       "description": {
         "kind": "markdown",
         "value": "A resource failed to load."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onerror"
+        }
+      ]
     },
     {
       "name": "onfocus",
       "description": {
         "kind": "markdown",
         "value": "An element has received focus (does not bubble)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onfocus"
+        }
+      ]
     },
     {
-      "name": "onformchange"
+      "name": "onformchange",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onformchange"
+        }
+      ]
     },
     {
-      "name": "onforminput"
+      "name": "onforminput",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onforminput"
+        }
+      ]
     },
     {
       "name": "oninput",
       "description": {
         "kind": "markdown",
         "value": "The value of an element changes or the content of an element with the attribute contenteditable is modified."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/oninput"
+        }
+      ]
     },
     {
       "name": "oninvalid",
       "description": {
         "kind": "markdown",
         "value": "A submittable element has been checked and doesn't satisfy its constraints."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/oninvalid"
+        }
+      ]
     },
     {
       "name": "onkeydown",
       "description": {
         "kind": "markdown",
         "value": "A key is pressed down."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onkeydown"
+        }
+      ]
     },
     {
       "name": "onkeypress",
       "description": {
         "kind": "markdown",
         "value": "A key is pressed down and that key normally produces a character value (use input instead)."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onkeypress"
+        }
+      ]
     },
     {
       "name": "onkeyup",
       "description": {
         "kind": "markdown",
         "value": "A key is released."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onkeyup"
+        }
+      ]
     },
     {
       "name": "onload",
       "description": {
         "kind": "markdown",
         "value": "A resource and its dependent resources have finished loading."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onload"
+        }
+      ]
     },
     {
       "name": "onloadeddata",
       "description": {
         "kind": "markdown",
         "value": "The first frame of the media has finished loading."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onloadeddata"
+        }
+      ]
     },
     {
       "name": "onloadedmetadata",
       "description": {
         "kind": "markdown",
         "value": "The metadata has been loaded."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onloadedmetadata"
+        }
+      ]
     },
     {
       "name": "onloadstart",
       "description": {
         "kind": "markdown",
         "value": "Progress has begun."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onloadstart"
+        }
+      ]
     },
     {
       "name": "onmousedown",
       "description": {
         "kind": "markdown",
         "value": "A pointing device button (usually a mouse) is pressed on an element."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onmousedown"
+        }
+      ]
     },
     {
       "name": "onmouseenter",
       "description": {
         "kind": "markdown",
         "value": "A pointing device is moved onto the element that has the listener attached."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onmouseenter"
+        }
+      ]
     },
     {
       "name": "onmouseleave",
       "description": {
         "kind": "markdown",
         "value": "A pointing device is moved off the element that has the listener attached."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onmouseleave"
+        }
+      ]
     },
     {
       "name": "onmousemove",
       "description": {
         "kind": "markdown",
         "value": "A pointing device is moved over an element."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onmousemove"
+        }
+      ]
     },
     {
       "name": "onmouseout",
       "description": {
         "kind": "markdown",
         "value": "A pointing device is moved off the element that has the listener attached or off one of its children."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onmouseout"
+        }
+      ]
     },
     {
       "name": "onmouseover",
       "description": {
         "kind": "markdown",
         "value": "A pointing device is moved onto the element that has the listener attached or onto one of its children."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onmouseover"
+        }
+      ]
     },
     {
       "name": "onmouseup",
       "description": {
         "kind": "markdown",
         "value": "A pointing device button is released over an element."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onmouseup"
+        }
+      ]
     },
     {
-      "name": "onmousewheel"
+      "name": "onmousewheel",
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onmousewheel"
+        }
+      ]
     },
     {
       "name": "onpause",
       "description": {
         "kind": "markdown",
         "value": "Playback has been paused."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onpause"
+        }
+      ]
     },
     {
       "name": "onplay",
       "description": {
         "kind": "markdown",
         "value": "Playback has begun."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onplay"
+        }
+      ]
     },
     {
       "name": "onplaying",
       "description": {
         "kind": "markdown",
         "value": "Playback is ready to start after having been paused or delayed due to lack of data."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onplaying"
+        }
+      ]
     },
     {
       "name": "onpointercancel",
       "description": {
         "kind": "markdown",
         "value": "The pointer is unlikely to produce any more events."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onpointercancel"
+        }
+      ]
     },
     {
       "name": "onpointerdown",
       "description": {
         "kind": "markdown",
         "value": "The pointer enters the active buttons state."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onpointerdown"
+        }
+      ]
     },
     {
       "name": "onpointerenter",
       "description": {
         "kind": "markdown",
         "value": "Pointing device is moved inside the hit-testing boundary."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onpointerenter"
+        }
+      ]
     },
     {
       "name": "onpointerleave",
       "description": {
         "kind": "markdown",
         "value": "Pointing device is moved out of the hit-testing boundary."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onpointerleave"
+        }
+      ]
     },
     {
       "name": "onpointerlockchange",
       "description": {
         "kind": "markdown",
         "value": "The pointer was locked or released."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onpointerlockchange"
+        }
+      ]
     },
     {
       "name": "onpointerlockerror",
       "description": {
         "kind": "markdown",
         "value": "It was impossible to lock the pointer for technical reasons or because the permission was denied."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onpointerlockerror"
+        }
+      ]
     },
     {
       "name": "onpointermove",
       "description": {
         "kind": "markdown",
         "value": "The pointer changed coordinates."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onpointermove"
+        }
+      ]
     },
     {
       "name": "onpointerout",
       "description": {
         "kind": "markdown",
         "value": "The pointing device moved out of hit-testing boundary or leaves detectable hover range."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onpointerout"
+        }
+      ]
     },
     {
       "name": "onpointerover",
       "description": {
         "kind": "markdown",
         "value": "The pointing device is moved into the hit-testing boundary."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onpointerover"
+        }
+      ]
     },
     {
       "name": "onpointerup",
       "description": {
         "kind": "markdown",
         "value": "The pointer leaves the active buttons state."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onpointerup"
+        }
+      ]
     },
     {
       "name": "onprogress",
       "description": {
         "kind": "markdown",
         "value": "In progress."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onprogress"
+        }
+      ]
     },
     {
       "name": "onratechange",
       "description": {
         "kind": "markdown",
         "value": "The playback rate has changed."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onratechange"
+        }
+      ]
     },
     {
       "name": "onreadystatechange",
       "description": {
         "kind": "markdown",
         "value": "The readyState attribute of a document has changed."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onreadystatechange"
+        }
+      ]
     },
     {
       "name": "onreset",
       "description": {
         "kind": "markdown",
         "value": "A form is reset."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onreset"
+        }
+      ]
     },
     {
       "name": "onresize",
       "description": {
         "kind": "markdown",
         "value": "The document view has been resized."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onresize"
+        }
+      ]
     },
     {
       "name": "onscroll",
       "description": {
         "kind": "markdown",
         "value": "The document view or an element has been scrolled."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onscroll"
+        }
+      ]
     },
     {
       "name": "onseeked",
       "description": {
         "kind": "markdown",
         "value": "A seek operation completed."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onseeked"
+        }
+      ]
     },
     {
       "name": "onseeking",
       "description": {
         "kind": "markdown",
         "value": "A seek operation began."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onseeking"
+        }
+      ]
     },
     {
       "name": "onselect",
       "description": {
         "kind": "markdown",
         "value": "Some text is being selected."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onselect"
+        }
+      ]
     },
     {
       "name": "onshow",
       "description": {
         "kind": "markdown",
         "value": "A contextmenu event was fired on/bubbled to an element that has a contextmenu attribute"
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onshow"
+        }
+      ]
     },
     {
       "name": "onstalled",
       "description": {
         "kind": "markdown",
         "value": "The user agent is trying to fetch media data, but data is unexpectedly not forthcoming."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onstalled"
+        }
+      ]
     },
     {
       "name": "onsubmit",
       "description": {
         "kind": "markdown",
         "value": "A form is submitted."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onsubmit"
+        }
+      ]
     },
     {
       "name": "onsuspend",
       "description": {
         "kind": "markdown",
         "value": "Media data loading has been suspended."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onsuspend"
+        }
+      ]
     },
     {
       "name": "ontimeupdate",
       "description": {
         "kind": "markdown",
         "value": "The time indicated by the currentTime attribute has been updated."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/ontimeupdate"
+        }
+      ]
     },
     {
       "name": "onvolumechange",
       "description": {
         "kind": "markdown",
         "value": "The volume has changed."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onvolumechange"
+        }
+      ]
     },
     {
       "name": "onwaiting",
       "description": {
         "kind": "markdown",
         "value": "Playback has stopped because of a temporary lack of data."
-      }
+      },
+      "references": [
+        {
+          "name": "MDN Reference",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/onwaiting"
+        }
+      ]
     },
     {
       "name": "scriptlevel",
@@ -1218,9 +2566,19 @@
       "references": [
         {
           "name": "MDN Reference",
-          "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute"
+          "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Global_attributes/scriptlevel"
         }
-      ]
+      ],
+      "browsers": [
+        "C109",
+        "CA109",
+        "E109",
+        "FF70",
+        "FFA79"
+      ],
+      "status": {
+        "baseline": false
+      }
     }
   ]
 }

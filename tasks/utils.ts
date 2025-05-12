@@ -1,37 +1,25 @@
-import type { IAttributeData } from "vscode-html-languageservice";
+import type { IAttributeData, ITagData } from "vscode-html-languageservice";
 
-const mdnReference = (url?: string) =>
-  url
-    ? [
-        {
-          name: "MDN Reference",
-          url,
-        },
-      ]
-    : undefined;
 export const attribute = (
   name: string,
   description: string,
-  values?: string[],
-) => ({
+  values?: string[] | string,
+): IAttributeData => ({
   name,
   description,
-  values: values?.map((x) => ({
-    name: x,
-  })),
-  references: mdnReference(
-    "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute",
-  ),
+  values: Array.isArray(values)
+    ? values?.map((x) => ({
+        name: x,
+      }))
+    : undefined,
+  valueSet: !Array.isArray(values) ? values : undefined,
 });
 export const element = (
   name: string,
   description,
   attributes: IAttributeData[] = [],
-) => ({
+): ITagData => ({
   name,
   description,
   attributes,
-  references: mdnReference(
-    `https://developer.mozilla.org/en-US/docs/Web/MathML/Element/${name}`,
-  ),
 });
