@@ -1,12 +1,12 @@
 import bcd, {
-  CompatStatement,
-  Identifier,
-  SupportBlock,
-  SupportStatement,
+  type CompatStatement,
+  type Identifier,
+  type SupportBlock,
+  type SupportStatement,
 } from "@mdn/browser-compat-data";
 // @ts-ignore
 import { getStatus } from "compute-baseline";
-import { IAttributeData, ITagData } from "vscode-html-languageservice";
+import type { IAttributeData, ITagData } from "vscode-html-languageservice";
 
 const namespace = "mathml";
 export const featureBcd = bcd[namespace];
@@ -69,18 +69,21 @@ function supportToShortCompatString(
 const mdnReference = (url?: string) =>
   url
     ? [
-      {
-        name: "MDN Reference",
-        url,
-      },
-    ]
+        {
+          name: "MDN Reference",
+          url,
+        },
+      ]
     : undefined;
 
-export const addCompatDataAttrs = (attributes: IAttributeData[], featureId?: string, t?: ITagData) => {
+export const addCompatDataAttrs = (
+  attributes: IAttributeData[],
+  featureId?: string,
+  t?: ITagData,
+) => {
   // Add the Baseline status to each attribute
   attributes.forEach((a) => {
-    let attributeNamespace,
-      bcdMatchingAttr;
+    let attributeNamespace, bcdMatchingAttr;
     if (t) {
       attributeNamespace = `elements.${t.name}`;
       bcdMatchingAttr = bcdElements[t.name][a.name];
@@ -112,7 +115,7 @@ export const addCompatDataAttrs = (attributes: IAttributeData[], featureId?: str
     const { support, ...status } = attrStatus;
     a.status = status;
   });
-}
+};
 
 export const addCompatData = (t: ITagData) => {
   if (t.description) {
@@ -141,29 +144,37 @@ export const addCompatData = (t: ITagData) => {
   delete status.support;
   t.status = status;
 
-  addCompatDataAttrs(t.attributes, featureId, t)
+  addCompatDataAttrs(t.attributes, featureId, t);
   lookForMissingAttributes(t);
 };
 
 export const lookForMissingTags = (tags: ITagData[]) => {
-  const missingElements =
-    Object.entries(bcdElements).filter(([x, element]) => !(element as Identifier).__compat?.status?.deprecated &&
-      !(element as Identifier).__compat?.status?.experimental && (element as Identifier).__compat?.status?.standard_track && !tags.find((y) => y.name === x)).map(([x]) => x)
+  const missingElements = Object.entries(bcdElements)
+    .filter(
+      ([x, element]) =>
+        !(element as Identifier).__compat?.status?.deprecated &&
+        !(element as Identifier).__compat?.status?.experimental &&
+        (element as Identifier).__compat?.status?.standard_track &&
+        !tags.find((y) => y.name === x),
+    )
+    .map(([x]) => x);
   if (missingElements.length > 0)
-    console.log(`Missing elements ${JSON.stringify(missingElements)}`)
+    console.log(`Missing elements ${JSON.stringify(missingElements)}`);
 };
 
 export const lookForMissingAttributes = (t: ITagData) => {
   // console.log(bcdElements.mi.mathvariant)
-  const missingAttrs = Object.entries(bcdElements[t.name]).filter(
-    ([x, attribute]) => {
-      return x !== "__compat" &&
+  const missingAttrs = Object.entries(bcdElements[t.name])
+    .filter(([x, attribute]) => {
+      return (
+        x !== "__compat" &&
         !(attribute as Identifier).__compat?.status?.deprecated &&
         !(attribute as Identifier).__compat?.status?.experimental &&
         (attribute as Identifier).__compat?.status?.standard_track &&
         !t.attributes.find((y) => y.name === x)
-    }
-  ).map(([x]) => x);
+      );
+    })
+    .map(([x]) => x);
   if (missingAttrs.length > 0) {
     console.log(`${t.name} Missing attributes ${JSON.stringify(missingAttrs)}`);
   }
