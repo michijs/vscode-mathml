@@ -2,7 +2,7 @@ import * as fs from "fs";
 import type { HTMLDataV1, IAttributeData } from "vscode-html-languageservice";
 import { element, attribute } from "./utils";
 import htmlData from "@vscode/web-custom-data/data/browsers.html-data.json";
-import { addCompatData, addCompatDataAttrs, lookForMissingTags } from "./compatData";
+import { addCompatData, addCompatDataAttrs, lookForDeprecatedTags, lookForMissingTags } from "./compatData";
 const MathMLEvents = htmlData.globalAttributes.filter((x) =>
   x.name.startsWith("on"),
 ) as unknown as IAttributeData[];
@@ -170,20 +170,10 @@ const jsonData: HTMLDataV1 = {
     element(
       "ms",
       "The `<ms>` MathML element represents a string literal meant to be interpreted by programming languages and computer algebra systems.",
-      [
-        attribute("lquote", "The opening quote to enclose the content."),
-        attribute("rquote", "The closing quote to enclose the content."),
-      ],
     ),
     element(
       "semantics",
       "The `<semantics>` MathML element associates annotations with a MathML expression, for example its text source as a lightweight markup language or mathematical meaning expressed in a special XML dialect.",
-      [
-        attribute(
-          "encoding",
-          "The encoding of the semantic information in the annotation.",
-        ),
-      ],
     ),
     element(
       "mspace",
@@ -286,10 +276,10 @@ const jsonData: HTMLDataV1 = {
       "annotation-xml",
       "The `<annotation-xml>` MathML element contains an annotation to the MathML expression in a textual format, for example LaTeX.",
       [
-        attribute(
-          "encoding",
-          "The encoding of the semantic information in the annotation.",
-        ),
+        // attribute(
+        //   "encoding",
+        //   "The encoding of the semantic information in the annotation.",
+        // ),
       ],
     ),
     element(
@@ -355,3 +345,4 @@ fs.writeFileSync(
 );
 
 lookForMissingTags(orderedData.tags!);
+lookForDeprecatedTags(orderedData.tags!);

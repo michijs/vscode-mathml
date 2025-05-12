@@ -45,18 +45,7 @@
         "kind": "markdown",
         "value": "The `<annotation-xml>` MathML element contains an annotation to the MathML expression in a textual format, for example LaTeX."
       },
-      "attributes": [
-        {
-          "name": "encoding",
-          "description": "The encoding of the semantic information in the annotation.",
-          "references": [
-            {
-              "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/encoding"
-            }
-          ]
-        }
-      ],
+      "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
@@ -969,28 +958,7 @@
         "kind": "markdown",
         "value": "The `<ms>` MathML element represents a string literal meant to be interpreted by programming languages and computer algebra systems."
       },
-      "attributes": [
-        {
-          "name": "lquote",
-          "description": "The opening quote to enclose the content.",
-          "references": [
-            {
-              "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/lquote"
-            }
-          ]
-        },
-        {
-          "name": "rquote",
-          "description": "The closing quote to enclose the content.",
-          "references": [
-            {
-              "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/rquote"
-            }
-          ]
-        }
-      ],
+      "attributes": [],
       "references": [
         {
           "name": "MDN Reference",
@@ -1553,18 +1521,7 @@
         "kind": "markdown",
         "value": "The `<semantics>` MathML element associates annotations with a MathML expression, for example its text source as a lightweight markup language or mathematical meaning expressed in a special XML dialect."
       },
-      "attributes": [
-        {
-          "name": "encoding",
-          "description": "The encoding of the semantic information in the annotation.",
-          "references": [
-            {
-              "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/encoding"
-            }
-          ]
-        }
-      ],
+      "attributes": [],
       "references": [
         {
           "name": "MDN Reference",

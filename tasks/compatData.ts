@@ -143,6 +143,8 @@ export const addCompatData = (t: ITagData) => {
 
   addCompatDataAttrs(t.attributes, featureId, t)
   lookForMissingAttributes(t);
+  // TODO: For some reason some attributes are not there
+  lookForDeprecatedAttributes(t);
 };
 
 export const lookForMissingTags = (tags: ITagData[]) => {
@@ -153,8 +155,17 @@ export const lookForMissingTags = (tags: ITagData[]) => {
     console.log(`Missing elements ${JSON.stringify(missingElements)}`)
 };
 
+export const lookForDeprecatedTags = (tags: ITagData[]) => {
+  const deprecatedElements = tags.filter(x => {
+    const elementFound = bcdElements[x.name]
+    return !elementFound || elementFound.__compat?.status?.deprecated
+  }).map(x => x.name)
+  
+  if (deprecatedElements.length > 0)
+    console.log(`Remove the following elements ${JSON.stringify(deprecatedElements)}`)
+};
+
 export const lookForMissingAttributes = (t: ITagData) => {
-  // console.log(bcdElements.mi.mathvariant)
   const missingAttrs = Object.entries(bcdElements[t.name]).filter(
     ([x, attribute]) => {
       return x !== "__compat" &&
@@ -167,4 +178,14 @@ export const lookForMissingAttributes = (t: ITagData) => {
   if (missingAttrs.length > 0) {
     console.log(`${t.name} Missing attributes ${JSON.stringify(missingAttrs)}`);
   }
+};
+
+export const lookForDeprecatedAttributes = (t: ITagData) => {
+  const deprecatedAttrs = t.attributes.filter(x => {
+    const attributeFound = bcdElements[t.name][x.name];
+    return !attributeFound || (attributeFound.__compat?.status?.deprecated === true)
+  }).map(x => x.name)
+  
+  if (deprecatedAttrs.length > 0)
+    console.log(`${t.name} Remove the following attributes ${JSON.stringify(deprecatedAttrs)}`)
 };
