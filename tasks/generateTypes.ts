@@ -2,7 +2,11 @@ import * as fs from "fs";
 import type { HTMLDataV1, IAttributeData } from "vscode-html-languageservice";
 import { element, attribute } from "./utils";
 import htmlData from "@vscode/web-custom-data/data/browsers.html-data.json";
-import { addCompatData, addCompatDataAttrs, lookForMissingTags } from "./compatData";
+import {
+  addCompatData,
+  addCompatDataAttrs,
+  lookForMissingTags,
+} from "./compatData";
 const MathMLEvents = htmlData.globalAttributes.filter((x) =>
   x.name.startsWith("on"),
 ) as unknown as IAttributeData[];
@@ -45,7 +49,7 @@ const jsonData: HTMLDataV1 = {
         attribute(
           "mathvariant",
           "A value of normal can be used to reset a single character to the normal font.",
-          ["normal"]
+          ["normal"],
         ),
       ],
     ),
@@ -106,11 +110,7 @@ const jsonData: HTMLDataV1 = {
         attribute(
           "form",
           "An enumerated attribute specifying how the operator is to be presented. For example, depending on the value, a different amount of space might be rendered on either side of the operator.",
-          [
-            "prefix",
-            "infix",
-            "postfix"
-          ],
+          ["prefix", "infix", "postfix"],
         ),
       ],
     ),
@@ -294,13 +294,13 @@ const jsonData: HTMLDataV1 = {
     ),
     element(
       "mprescripts",
-      "The `<mprescripts>` MathML element is used within an <mmultiscripts> element to indicate the start of the pre-scripts elements (subscripts and superscripts that are placed before the base expression)."
+      "The `<mprescripts>` MathML element is used within an <mmultiscripts> element to indicate the start of the pre-scripts elements (subscripts and superscripts that are placed before the base expression).",
     ),
     element(
       "msup",
       `The \`<msup>\` MathML element is used is used to attach a superscript to an expression.
 
-It uses the following syntax: \`<msup> base superscript </msup>\`.`
+It uses the following syntax: \`<msup> base superscript </msup>\`.`,
     ),
   ],
   globalAttributes: [
@@ -328,7 +328,7 @@ It uses the following syntax: \`<msup> base superscript </msup>\`.`
   ],
 };
 
-addCompatDataAttrs(jsonData.globalAttributes!)
+addCompatDataAttrs(jsonData.globalAttributes!);
 
 const orderedData: HTMLDataV1 = {
   ...jsonData,
