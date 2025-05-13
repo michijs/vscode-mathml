@@ -40,7 +40,7 @@
   "devDependencies": {
     "change-package-name": "1.0.5",
     "@vscode/web-custom-data": "0.5.2",
-    "@vscode/vsce": "2.26.0",
+    "@vscode/vsce": "3.3.2",
     "typescript": "5.8.3",
     "@types/bun": "1.2.13",
     "@mdn/browser-compat-data": "6.0.13",
