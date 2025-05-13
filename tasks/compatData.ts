@@ -165,36 +165,48 @@ export const lookForMissingTags = (tags: ITagData[]) => {
 };
 
 export const lookForDeprecatedTags = (tags: ITagData[]) => {
-  const deprecatedElements = tags.filter(x => {
-    const elementFound = bcdElements[x.name]
-    return !elementFound || elementFound.__compat?.status?.deprecated
-  }).map(x => x.name)
-  
+  const deprecatedElements = tags
+    .filter((x) => {
+      const elementFound = bcdElements[x.name];
+      return !elementFound || elementFound.__compat?.status?.deprecated;
+    })
+    .map((x) => x.name);
+
   if (deprecatedElements.length > 0)
-    console.log(`Remove the following elements ${JSON.stringify(deprecatedElements)}`)
+    console.log(
+      `Remove the following elements ${JSON.stringify(deprecatedElements)}`,
+    );
 };
 
 export const lookForMissingAttributes = (t: ITagData) => {
-  const missingAttrs = Object.entries(bcdElements[t.name]).filter(
-    ([x, attribute]) => {
-      return x !== "__compat" &&
+  const missingAttrs = Object.entries(bcdElements[t.name])
+    .filter(([x, attribute]) => {
+      return (
+        x !== "__compat" &&
         !(attribute as Identifier).__compat?.status?.deprecated &&
         !(attribute as Identifier).__compat?.status?.experimental &&
         (attribute as Identifier).__compat?.status?.standard_track &&
         !t.attributes.find((y) => y.name === x)
-    }
-  ).map(([x]) => x);
+      );
+    })
+    .map(([x]) => x);
   if (missingAttrs.length > 0) {
     console.log(`${t.name} Missing attributes ${JSON.stringify(missingAttrs)}`);
   }
 };
 
 export const lookForDeprecatedAttributes = (t: ITagData) => {
-  const deprecatedAttrs = t.attributes.filter(x => {
-    const attributeFound = bcdElements[t.name][x.name];
-    return !attributeFound || (attributeFound.__compat?.status?.deprecated === true)
-  }).map(x => x.name)
-  
+  const deprecatedAttrs = t.attributes
+    .filter((x) => {
+      const attributeFound = bcdElements[t.name][x.name];
+      return (
+        !attributeFound || attributeFound.__compat?.status?.deprecated === true
+      );
+    })
+    .map((x) => x.name);
+
   if (deprecatedAttrs.length > 0)
-    console.log(`${t.name} Remove the following attributes ${JSON.stringify(deprecatedAttrs)}`)
+    console.log(
+      `${t.name} Remove the following attributes ${JSON.stringify(deprecatedAttrs)}`,
+    );
 };
