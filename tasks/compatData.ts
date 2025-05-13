@@ -69,18 +69,21 @@ function supportToShortCompatString(
 const mdnReference = (url?: string) =>
   url
     ? [
-      {
-        name: "MDN Reference",
-        url,
-      },
-    ]
+        {
+          name: "MDN Reference",
+          url,
+        },
+      ]
     : undefined;
 
-export const addCompatDataAttrs = (attributes: IAttributeData[], featureId?: string, t?: ITagData) => {
+export const addCompatDataAttrs = (
+  attributes: IAttributeData[],
+  featureId?: string,
+  t?: ITagData,
+) => {
   // Add the Baseline status to each attribute
   attributes.forEach((a) => {
-    let attributeNamespace,
-      bcdMatchingAttr;
+    let attributeNamespace, bcdMatchingAttr;
     if (t) {
       attributeNamespace = `elements.${t.name}`;
       bcdMatchingAttr = bcdElements[t.name][a.name];
@@ -112,7 +115,7 @@ export const addCompatDataAttrs = (attributes: IAttributeData[], featureId?: str
     const { support, ...status } = attrStatus;
     a.status = status;
   });
-}
+};
 
 export const addCompatData = (t: ITagData) => {
   if (t.description) {
@@ -141,18 +144,24 @@ export const addCompatData = (t: ITagData) => {
   delete status.support;
   t.status = status;
 
-  addCompatDataAttrs(t.attributes, featureId, t)
+  addCompatDataAttrs(t.attributes, featureId, t);
   lookForMissingAttributes(t);
   // TODO: For some reason some attributes are not there
   lookForDeprecatedAttributes(t);
 };
 
 export const lookForMissingTags = (tags: ITagData[]) => {
-  const missingElements =
-    Object.entries(bcdElements).filter(([x, element]) => !(element as Identifier).__compat?.status?.deprecated &&
-      !(element as Identifier).__compat?.status?.experimental && (element as Identifier).__compat?.status?.standard_track && !tags.find((y) => y.name === x)).map(([x]) => x)
+  const missingElements = Object.entries(bcdElements)
+    .filter(
+      ([x, element]) =>
+        !(element as Identifier).__compat?.status?.deprecated &&
+        !(element as Identifier).__compat?.status?.experimental &&
+        (element as Identifier).__compat?.status?.standard_track &&
+        !tags.find((y) => y.name === x),
+    )
+    .map(([x]) => x);
   if (missingElements.length > 0)
-    console.log(`Missing elements ${JSON.stringify(missingElements)}`)
+    console.log(`Missing elements ${JSON.stringify(missingElements)}`);
 };
 
 export const lookForDeprecatedTags = (tags: ITagData[]) => {
