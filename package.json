@@ -42,7 +42,7 @@
     "@vscode/web-custom-data": "0.5.2",
     "@vscode/vsce": "3.4.2",
     "typescript": "5.8.3",
-    "@types/bun": "1.2.13",
+    "@types/bun": "1.2.15",
     "@mdn/browser-compat-data": "6.0.17",
     "compute-baseline": "0.3.1",
     "vscode-html-languageservice": "5.4.0"
