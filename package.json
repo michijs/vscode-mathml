@@ -43,7 +43,7 @@
     "@vscode/vsce": "3.5.0",
     "typescript": "5.8.3",
     "@types/bun": "1.2.15",
-    "@mdn/browser-compat-data": "6.0.21",
+    "@mdn/browser-compat-data": "6.0.29",
     "compute-baseline": "0.3.1",
     "vscode-html-languageservice": "5.5.0"
   },
