@@ -126,6 +126,10 @@ export const addCompatData = (t: ITagData) => {
   }
 
   const bcdMatchingTag = bcdElements[t.name];
+  if (!bcdMatchingTag) {
+    console.log(`This element should be removed ${t.name}`);
+    return;
+  }
   t.references = mdnReference(
     bcdMatchingTag.__compat?.mdn_url ?? `${elementsMDN}/${t.name}`,
   );
