@@ -1,6 +1,6 @@
 [
   {
-    "script": "test-tsc",
+    "script": "dist",
     "name": "Typescript tests"
   }
 ]
