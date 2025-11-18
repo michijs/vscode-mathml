@@ -11,10 +11,7 @@
     "declaration": true,
     "experimentalDecorators": true,
     "noErrorTruncation": true,
-    "lib": [
-      "dom",
-      "esnext"
-    ],
+    "lib": ["dom", "esnext"],
     "incremental": true,
     "outDir": "bin",
     "moduleResolution": "node",
@@ -23,10 +20,6 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false
   },
-  "include": [
-    "./tasks"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["./tasks"],
+  "exclude": ["node_modules"]
 }
