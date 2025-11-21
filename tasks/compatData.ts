@@ -4,6 +4,7 @@ import bcd, {
   type SupportBlock,
   type SupportStatement,
 } from "@mdn/browser-compat-data";
+// @ts-expect-error
 import { getStatus } from "compute-baseline";
 import type { IAttributeData, ITagData } from "vscode-html-languageservice";
 
@@ -142,7 +143,6 @@ export const addCompatData = (t: ITagData) => {
     return;
   }
   t.browsers = getBrowserCompatString(status.support) as string[] | undefined;
-  // @ts-expect-error
   delete status.support;
   t.status = status;
 
