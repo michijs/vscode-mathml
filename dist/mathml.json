@@ -25,15 +25,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/annotation"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S5",
-        "SM4.2"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S5", "SM4.2"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -52,15 +44,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/annotation-xml"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S5",
-        "SM4.2"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S5", "SM4.2"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -90,15 +74,7 @@
               "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/math"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF4",
-            "FFA4",
-            "S5.1",
-            "SM5"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF4", "FFA4", "S5.1", "SM5"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -126,15 +102,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/math"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF4",
-        "FFA4",
-        "S5.1",
-        "SM5"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF4", "FFA4", "S5.1", "SM5"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -153,15 +121,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/merror"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -183,15 +143,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/linethickness"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S9",
-            "SM9"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S9", "SM9"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -204,15 +156,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mfrac"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S5.1",
-        "SM5"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S5.1", "SM5"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -239,15 +183,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/mathvariant"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF70",
-            "FFA79",
-            "S10",
-            "SM10"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF70", "FFA79", "S10", "SM10"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -260,15 +196,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mi"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -287,15 +215,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mmultiscripts"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -314,15 +234,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mn"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -373,15 +285,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/form"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S8",
-            "SM8"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S8", "SM8"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -404,15 +308,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/largeop"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S8",
-            "SM8"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S8", "SM8"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -427,15 +323,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/lspace"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S8",
-            "SM8"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S8", "SM8"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -450,15 +338,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/maxsize"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S8",
-            "SM8"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S8", "SM8"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -473,15 +353,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/minsize"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S8",
-            "SM8"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S8", "SM8"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -504,15 +376,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/movablelimits"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S10",
-            "SM10"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S10", "SM10"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -527,15 +391,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/rspace"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S8",
-            "SM8"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S8", "SM8"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -576,15 +432,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/stretchy"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S5",
-            "SM4.2"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S5", "SM4.2"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -607,15 +455,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/symmetric"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S8",
-            "SM8"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S8", "SM8"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -628,15 +468,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mo"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S5",
-        "SM4.2"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S5", "SM4.2"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -666,15 +498,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/accent"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S10",
-            "SM10"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S10", "SM10"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -687,15 +511,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mover"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -717,15 +533,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/depth"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S10",
-            "SM10"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S10", "SM10"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -740,15 +548,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/height"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S10",
-            "SM10"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S10", "SM10"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -763,15 +563,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/lspace"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S10",
-            "SM10"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S10", "SM10"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -786,15 +578,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/voffset"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF7",
-            "FFA7",
-            "S10",
-            "SM10"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF7", "FFA7", "S10", "SM10"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -809,15 +593,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/width"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S10",
-            "SM10"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S10", "SM10"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -830,15 +606,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mpadded"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -857,15 +625,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mphantom"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -884,15 +644,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mprescripts"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -911,15 +663,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mroot"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -938,15 +682,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mrow"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -965,15 +701,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/ms"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S9",
-        "SM9"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S9", "SM9"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -995,15 +723,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/depth"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S7",
-            "SM7"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S7", "SM7"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -1018,15 +738,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/height"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S7",
-            "SM7"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S7", "SM7"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -1041,15 +753,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/width"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S7",
-            "SM7"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S7", "SM7"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -1062,15 +766,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mspace"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S7",
-        "SM7"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S7", "SM7"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1089,15 +785,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/msqrt"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S5.1",
-        "SM5"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S5.1", "SM5"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1116,15 +804,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mstyle"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF6",
-        "FFA6",
-        "S5.1",
-        "SM5"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF6", "FFA6", "S5.1", "SM5"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1143,15 +823,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/msub"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1170,15 +842,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/msubsup"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1197,15 +861,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/msup"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1224,15 +880,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mtable"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S5.1",
-        "SM5"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S5.1", "SM5"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1254,15 +902,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/columnspan"
             }
           ],
-          "browsers": [
-            "C117",
-            "CA117",
-            "E117",
-            "FF1",
-            "FFA4",
-            "S5.1",
-            "SM5"
-          ],
+          "browsers": ["C117", "CA117", "E117", "FF1", "FFA4", "S5.1", "SM5"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-09-15"
@@ -1277,15 +917,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/rowspan"
             }
           ],
-          "browsers": [
-            "C117",
-            "CA117",
-            "E117",
-            "FF1",
-            "FFA4",
-            "S5.1",
-            "SM5"
-          ],
+          "browsers": ["C117", "CA117", "E117", "FF1", "FFA4", "S5.1", "SM5"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-09-15"
@@ -1298,15 +930,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mtd"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S5.1",
-        "SM5"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S5.1", "SM5"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1325,15 +949,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mtext"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1352,15 +968,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/mtr"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S5.1",
-        "SM5"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S5.1", "SM5"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1390,15 +998,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/accentunder"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S10",
-            "SM10"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S10", "SM10"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -1411,15 +1011,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/munder"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S5.1",
-        "SM5"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S5.1", "SM5"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1449,15 +1041,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/accent"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S10",
-            "SM10"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S10", "SM10"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -1480,15 +1064,7 @@
               "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/accentunder"
             }
           ],
-          "browsers": [
-            "C109",
-            "CA109",
-            "E109",
-            "FF1",
-            "FFA4",
-            "S10",
-            "SM10"
-          ],
+          "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S10", "SM10"],
           "status": {
             "baseline": "low",
             "baseline_low_date": "2023-01-12"
@@ -1501,15 +1077,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/munderover"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S6",
-        "SM6"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S6", "SM6"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1528,15 +1096,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/semantics"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF1",
-        "FFA4",
-        "S5",
-        "SM4.2"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF1", "FFA4", "S5", "SM4.2"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1561,15 +1121,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Global_attributes/dir"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF70",
-        "FFA79",
-        "S8",
-        "SM8"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF70", "FFA79", "S8", "SM8"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1592,15 +1144,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Global_attributes/displaystyle"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF83",
-        "FFA83",
-        "S14",
-        "SM14"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF83", "FFA83", "S14", "SM14"],
       "status": {
         "baseline": "low",
         "baseline_low_date": "2023-01-12"
@@ -1615,12 +1159,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Global_attributes/href"
         }
       ],
-      "browsers": [
-        "FF7",
-        "FFA7",
-        "S10",
-        "SM10"
-      ],
+      "browsers": ["FF7", "FFA7", "S10", "SM10"],
       "status": {
         "baseline": false
       }
@@ -2526,13 +2065,7 @@
           "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Global_attributes/scriptlevel"
         }
       ],
-      "browsers": [
-        "C109",
-        "CA109",
-        "E109",
-        "FF70",
-        "FFA79"
-      ],
+      "browsers": ["C109", "CA109", "E109", "FF70", "FFA79"],
       "status": {
         "baseline": false
       }
