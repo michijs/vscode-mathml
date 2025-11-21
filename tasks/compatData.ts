@@ -4,7 +4,6 @@ import bcd, {
   type SupportBlock,
   type SupportStatement,
 } from "@mdn/browser-compat-data";
-// @ts-expect-error
 import { getStatus } from "compute-baseline";
 import type { IAttributeData, ITagData } from "vscode-html-languageservice";
 
