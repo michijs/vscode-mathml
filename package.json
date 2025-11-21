@@ -10,9 +10,6 @@
     "type": "git",
     "url": "https://github.com/michijs/vscode-mathml.git"
   },
-  "files": [
-    "dist/"
-  ],
   "galleryBanner": {
     "color": "#154db5",
     "theme": "dark"
