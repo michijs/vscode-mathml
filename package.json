@@ -36,10 +36,10 @@
   ],
   "devDependencies": {
     "@mdn/browser-compat-data": "6.1.4",
-    "@michijs/shared-configs": "0.0.24",
-    "bun-types": "1.2.20",
+    "@michijs/shared-configs": "0.0.26",
     "@vscode/vsce": "3.6.0",
     "@vscode/web-custom-data": "0.6.0",
+    "bun-types": "1.2.20",
     "change-package-name": "1.0.5",
     "compute-baseline": "0.3.1",
     "typescript": "5.9.2",
