@@ -1,8 +1,10 @@
 import bcd, {
   type CompatStatement,
   type Identifier,
+  type SimpleSupportStatement,
   type SupportBlock,
   type SupportStatement,
+type VersionValue,
 } from "@mdn/browser-compat-data";
 // @ts-expect-error
 import { getStatus } from "compute-baseline";
@@ -39,26 +41,24 @@ function getBrowserCompatString(support: SupportBlock) {
     return;
   }
   return Object.entries(support).map(([browser, version_added]) => {
-    const abbreviation = BaselineBrowserAbbreviations[browser];
-    return supportToShortCompatString({ version_added }, abbreviation);
+    const abbreviation: string = BaselineBrowserAbbreviations[browser];
+    return supportToShortCompatString(version_added, abbreviation);
   });
 }
 
 function supportToShortCompatString(
-  support: { version_added: SupportStatement },
+  support: SupportStatement,
   browserAbbrev: string,
 ): string {
-  let version_added;
-  if (Array.isArray(support) && support[0] && support[0].version_added) {
-    version_added = support[0].version_added;
-  } else if (support.version_added) {
-    version_added = support.version_added;
-  }
+  let version_added: VersionValue | null | undefined;
+  if (Array.isArray(support) && support[0] && support[0].version_added)
+    version_added = (support as SimpleSupportStatement[])[0].version_added;
+  else if ((support as SimpleSupportStatement).version_added)
+    version_added = (support as SimpleSupportStatement).version_added;
 
   if (version_added) {
-    if (typeof version_added === "boolean") {
+    if (typeof version_added === "boolean")
       return browserAbbrev;
-    }
     return `${browserAbbrev}${version_added}`;
   }
 
@@ -68,11 +68,11 @@ function supportToShortCompatString(
 const mdnReference = (url?: string) =>
   url
     ? [
-        {
-          name: "MDN Reference",
-          url,
-        },
-      ]
+      {
+        name: "MDN Reference",
+        url,
+      },
+    ]
     : undefined;
 
 export const addCompatDataAttrs = (
@@ -82,7 +82,7 @@ export const addCompatDataAttrs = (
 ) => {
   // Add the Baseline status to each attribute
   attributes.forEach((a) => {
-    let attributeNamespace, bcdMatchingAttr;
+    let attributeNamespace: string | undefined, bcdMatchingAttr: Identifier | undefined;
     if (t) {
       attributeNamespace = `elements.${t.name}`;
       bcdMatchingAttr = bcdElements[t.name][a.name];
