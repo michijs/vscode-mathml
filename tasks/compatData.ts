@@ -4,7 +4,7 @@ import bcd, {
   type SimpleSupportStatement,
   type SupportBlock,
   type SupportStatement,
-type VersionValue,
+  type VersionValue,
 } from "@mdn/browser-compat-data";
 // @ts-expect-error
 import { getStatus } from "compute-baseline";
@@ -57,8 +57,7 @@ function supportToShortCompatString(
     version_added = (support as SimpleSupportStatement).version_added;
 
   if (version_added) {
-    if (typeof version_added === "boolean")
-      return browserAbbrev;
+    if (typeof version_added === "boolean") return browserAbbrev;
     return `${browserAbbrev}${version_added}`;
   }
 
@@ -68,11 +67,11 @@ function supportToShortCompatString(
 const mdnReference = (url?: string) =>
   url
     ? [
-      {
-        name: "MDN Reference",
-        url,
-      },
-    ]
+        {
+          name: "MDN Reference",
+          url,
+        },
+      ]
     : undefined;
 
 export const addCompatDataAttrs = (
@@ -82,7 +81,8 @@ export const addCompatDataAttrs = (
 ) => {
   // Add the Baseline status to each attribute
   attributes.forEach((a) => {
-    let attributeNamespace: string | undefined, bcdMatchingAttr: Identifier | undefined;
+    let attributeNamespace: string | undefined,
+      bcdMatchingAttr: Identifier | undefined;
     if (t) {
       attributeNamespace = `elements.${t.name}`;
       bcdMatchingAttr = bcdElements[t.name][a.name];
