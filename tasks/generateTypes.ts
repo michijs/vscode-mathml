@@ -340,7 +340,7 @@ const orderedData: HTMLDataV1 = {
 };
 
 fs.writeFileSync(
-  "./dist/mathml.json",
+  "./generated/mathml.json",
   JSON.stringify(orderedData, null, 2),
   "utf-8",
 );

@@ -7,7 +7,7 @@
   "version": "1.1.0",
   "publisher": "michijs",
   "files": [
-    "dist/"
+    "generated/"
   ],
   "repository": {
     "type": "git",
@@ -28,8 +28,7 @@
     "generate": "bun run ./tasks/generateTypes.ts",
     "test-tsc": "tsc",
     "package": "change-package-name vscode-mathml && vsce package && change-package-name @michijs/vscode-mathml",
-    "publish-vsce": "vsce publish",
-    "link": "npm run dist && npm link --force && tsc -w"
+    "publish-vsce": "vsce publish"
   },
   "keywords": [
     "math",
@@ -51,7 +50,7 @@
   "contributes": {
     "html": {
       "customData": [
-        "./dist/mathml.json"
+        "./generated/mathml.json"
       ]
     }
   }
