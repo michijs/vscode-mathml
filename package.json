@@ -41,7 +41,7 @@
   ],
   "devDependencies": {
     "@mdn/browser-compat-data": "7.2.2",
-    "@michijs/shared-configs": "0.0.34",
+    "@michijs/shared-configs": "0.0.33",
     "@vscode/vsce": "3.7.1",
     "@vscode/web-custom-data": "0.6.2",
     "bun-types": "1.3.5",
