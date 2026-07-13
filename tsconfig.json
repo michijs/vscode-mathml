@@ -1,10 +1,18 @@
 {
-  "extends": ["@michijs/shared-configs/tsconfig"],
+  "extends": [
+    "@michijs/shared-configs/tsconfig"
+  ],
   "compilerOptions": {
     "rootDir": ".",
-    "types":["@types/bun"],
-    "moduleResolution": "bundler",
+    "types": [
+      "@types/bun"
+    ],
+    "moduleResolution": "bundler"
   },
-  "include": ["./tasks"],
-  "exclude": ["node_modules"]
+  "include": [
+    "./tasks"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
