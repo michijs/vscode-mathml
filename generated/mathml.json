@@ -89,7 +89,7 @@
           "references": [
             {
               "name": "MDN Reference",
-              "url": "https://developer.mozilla.org/docs/Web/MathML/Reference/Element/math"
+              "url": "https://developer.mozilla.org/en-US/docs/Web/MathML/Attribute/display"
             }
           ],
           "browsers": [
@@ -1308,8 +1308,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-09-15"
+            "baseline": "high",
+            "baseline_low_date": "2023-09-15",
+            "baseline_high_date": "2026-03-15"
           }
         },
         {
@@ -1331,8 +1332,9 @@
             ""
           ],
           "status": {
-            "baseline": "low",
-            "baseline_low_date": "2023-09-15"
+            "baseline": "high",
+            "baseline_low_date": "2023-09-15",
+            "baseline_high_date": "2026-03-15"
           }
         }
       ],
@@ -1671,8 +1673,6 @@
         }
       ],
       "browsers": [
-        "",
-        "",
         "",
         ""
       ],

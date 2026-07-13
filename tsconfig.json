@@ -1,7 +1,10 @@
 {
-  "extends": "@michijs/shared-configs/tsconfig",
+  "extends": ["@michijs/shared-configs/tsconfig"],
   "compilerOptions": {
-    "noEmit": true
+    "rootDir": ".",
+    "types":["@types/bun"],
+    "moduleResolution": "bundler",
   },
-  "include": ["./tasks"]
+  "include": ["./tasks"],
+  "exclude": ["node_modules"]
 }
