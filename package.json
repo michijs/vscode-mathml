@@ -40,7 +40,7 @@
     "typescript"
   ],
   "devDependencies": {
-    "@mdn/browser-compat-data": "8.0.6",
+    "@mdn/browser-compat-data": "8.0.7",
     "@michijs/shared-configs": "0.0.37",
     "@vscode/vsce": "3.9.2",
     "@vscode/web-custom-data": "0.6.3",
