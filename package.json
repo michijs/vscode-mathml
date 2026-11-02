@@ -40,11 +40,11 @@
     "typescript"
   ],
   "devDependencies": {
-    "@mdn/browser-compat-data": "8.1.6",
+    "@mdn/browser-compat-data": "8.1.7",
     "@michijs/shared-configs": "0.0.37",
-    "@vscode/vsce": "4.0.0",
+    "@vscode/vsce": "4.1.0",
     "@vscode/web-custom-data": "0.6.3",
-    "@types/bun": "1.4.3",
+    "@types/bun": "1.4.4",
     "change-package-name": "1.0.5",
     "compute-baseline": "0.5.0",
     "typescript": "7.0.2",
